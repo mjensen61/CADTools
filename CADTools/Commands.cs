@@ -19,7 +19,7 @@ namespace CADTools
 
         // the main block view command, brings up Model dialog with GsView control
         [CommandMethod("cadbpx")]
-        static public void calbpx()
+        static public void cadbpx()
         {
             if (CADTools.asdkCommands.CadPaletteSet == null) //Check that an instance of CadPaletteSet doesn't already exist.  Only open one at a time
             {
