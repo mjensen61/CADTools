@@ -312,7 +312,7 @@ namespace CADTools
 
         private void textBox1_MouseUp(object sender, MouseEventArgs e)
         {
-            ACADConnector.OpenHTTPS("Author", "https://github.com/mjensen61/LibrarySync-executable");
+            ACADConnector.OpenHTTPS("Author", "https://github.com/mjensen61/CADTools");
         }
 
         private void button4_MouseUp(object sender, MouseEventArgs e)
@@ -322,7 +322,7 @@ namespace CADTools
 
         private void button7_Click(object sender, EventArgs e)
         {
-            ACADConnector.OpenPDF("Drawing Office", "C:/ProgramData/Autodesk/ApplicationPlugins/zzCalibreCADCust.bundle/Contents/Help/CalibreCADHelp.pdf");
+            ACADConnector.OpenPDF("Drawing Office", model.libraryfilepath +"Standards/CADToolsHelp.pdf");
         }
 
         // Demand loading of templates on first use
