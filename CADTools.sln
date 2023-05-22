@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADTools", "CADTools\CADTools.csproj", "{A296F834-7569-4468-AAA5-242AB14B5E78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A296F834-7569-4468-AAA5-242AB14B5E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A296F834-7569-4468-AAA5-242AB14B5E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A296F834-7569-4468-AAA5-242AB14B5E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A296F834-7569-4468-AAA5-242AB14B5E78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {931310C2-E2AC-4D2E-BBC8-ABB30B3AAC6D}
+	EndGlobalSection
+EndGlobal

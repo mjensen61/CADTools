@@ -1,0 +1,16 @@
+[CalBlocks]
+Version=1.00.00
+[Directories]
+LibraryPath=K:\CC_CAD\TRANS_CAD\Library
+LocalPath=C:\ProgramData\Autodesk\ApplicationPlugins\zzCalibreCADCust.bundle
+[Files]
+layfile=C:\ProgramData\Autodesk\ApplicationPlugins\zzCalibreCADCust.bundle\Contents\LayerStates\Standard Layer Definitions.xml
+[Extentions]
+TemplateExtention=.dwt
+BlockExtention=.dwg
+[SUPPORT PATHS]
+PrinterStyleSheetPath             PlotStyles
+[NewsFeed]
+Localxml=C:\ProgramData\Autodesk\ApplicationPlugins\zzCalibreCADCust.bundle\Contents\NewsFeed\NewsFeed.xml
+Libraryxml=K:\CC_CAD\TRANS_CAD\Library\NewsFeed\NewsFeed.xml
+[EOF]
