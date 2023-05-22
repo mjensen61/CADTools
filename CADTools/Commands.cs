@@ -24,7 +24,7 @@ namespace CADTools
             if (CADTools.asdkCommands.CadPaletteSet == null) //Check that an instance of CadPaletteSet doesn't already exist.  Only open one at a time
             {
                 // create a new instance of the dialog
-                CadPaletteSet = new Autodesk.AutoCAD.Windows.PaletteSet("CAD tools", new Guid("{a296f834-7569-4468-aaa5-242ab14b5e78}"));
+                CadPaletteSet = new Autodesk.AutoCAD.Windows.PaletteSet("CAD tools", new Guid("{ABF4D614-C90C-4B95-8096-4E455FD13808}"));
 
                 // Add all the required controls to the pallette set
                 CadPaletteSet.Add("CAD Tools", new CADToolsControl());
