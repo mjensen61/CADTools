@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
+using AcadApp = Autodesk.AutoCAD.ApplicationServices.Application;
+
 namespace CADTools
 {
     public enum CADClassFileState
@@ -33,12 +35,10 @@ namespace CADTools
 
         public void CreateLayers()
         {
-#if UseACAD // Can only create layers inside the AutoCAD application
             foreach (Layer layer in this._layers)
             {
                 if (layer.Checked == true) layer.CreateCADLayer();
             }
-#endif
         }
         public void Insert(Layer layer)
         {
@@ -506,7 +506,6 @@ namespace CADTools
 
             this.ToolTipText = this.Name + ", " + this._line_type + ", " + this._line_file + ", " + this._line_weight + ", " + this._plot_style;
 
-#if UseACAD // Can only use AutoCAD objects inside the AutoCAD application
             // Get the current document and database
             Document acDoc = AcadApp.DocumentManager.MdiActiveDocument;
             Database acCurDb = acDoc.Database;
@@ -543,7 +542,6 @@ namespace CADTools
                     }
                 }
             }
-#endif
         }
 
 
@@ -664,7 +662,6 @@ namespace CADTools
                                     break;
 
                             }
-
 
                             // Set Color
                             acLyrTblRec.Color = Autodesk.AutoCAD.Colors.Color.FromColorIndex(Autodesk.AutoCAD.Colors.ColorMethod.ByAci, this._colour);

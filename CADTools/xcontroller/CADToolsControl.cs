@@ -64,24 +64,33 @@ namespace CADTools
             model.templatesLoaded = true;
         }
 
-        public void ListDirectory(TreeView treeView, string path, string extension)
+        public bool ListDirectory(TreeView treeView, string path, string extension)
         {
             treeView.Nodes.Clear();
+            if (Directory.Exists(path))
+            {
+                Form alertform = new LoadingForm();
+                alertform.Show();
+                alertform.Refresh();
 
-            Form alertform = new LoadingForm();
-            alertform.Show();
-            alertform.Refresh();
+                var rootDirectoryInfo = new DirectoryInfo(path);
+                TreeNode aRootNode = CreateDirectoryTree(rootDirectoryInfo, extension);
 
-            var rootDirectoryInfo = new DirectoryInfo(path);
-            TreeNode aRootNode = CreateDirectoryTree(rootDirectoryInfo, extension);
+                treeView.Nodes.Add(aRootNode);
+                aRootNode.Expand();
+                aRootNode.ToolTipText = path;
+                alertform.Hide();
+                alertform.Close();
 
-            treeView.Nodes.Add(aRootNode);
-            aRootNode.Expand();
-            aRootNode.ToolTipText = path;
-            alertform.Hide();
-            alertform.Close();
+                return true;
+            }
+            else
+            {
+                ACADConnector.WriteCADMessage("Unable to locate layer path: \"" + path + "\"");
+                return false;
+            }
         }
-        void LoadLayers(TreeView treeView, String filename)
+        bool LoadLayers(TreeView treeView, String filename)
         {
             if (File.Exists(filename))
             {
@@ -96,9 +105,13 @@ namespace CADTools
                 layers.Populate(treeView3);
 
                 alertform.Close();
+                return true;
             }
             else
+            {
                 ACADConnector.WriteCADMessage("Unable to locate layer file: \"" + filename + "\"");
+                return false;
+            }
         }
 
         private void treeView1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -330,8 +343,7 @@ namespace CADTools
         {
             if (model.templatesLoaded == false)
             {
-                ListDirectory(treeView1, model.tplpath, model.tplextension);
-                model.templatesLoaded = true;
+                model.templatesLoaded = ListDirectory(treeView1, model.tplpath, model.tplextension);
             }
         }
 
@@ -340,8 +352,7 @@ namespace CADTools
         {
             if (model.blocksLoaded == false)
             {
-                ListDirectory(treeView2, model.blkpath, model.blkextension);
-                model.blocksLoaded = true;
+                model.blocksLoaded = ListDirectory(treeView2, model.blkpath, model.blkextension);
             }
         }
 
@@ -350,8 +361,7 @@ namespace CADTools
         {
             if (model.layersLoaded == false)
             {
-                LoadLayers(treeView3, model.layfile);
-                model.layersLoaded = true;
+                model.layersLoaded =  LoadLayers(treeView3, model.layfile);
             }
         }
 
@@ -360,8 +370,7 @@ namespace CADTools
         {
             if (model.standardsloaded == false)
             {
-                ListDirectory(treeView4, model.pdfpath, model.pdfextension);
-                model.standardsloaded = true;
+                model.standardsloaded = ListDirectory(treeView4, model.pdfpath, model.pdfextension);
             }
         }
 

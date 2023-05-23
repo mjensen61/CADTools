@@ -47,8 +47,8 @@ C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\obj\Debug\CADTools.
 C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\obj\Debug\CADTools.csproj.GenerateResource.cache
 C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\obj\Debug\CADTools.csproj.CoreCompileInputs.cache
 C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\obj\Debug\CADTools.csproj.CopyComplete
-C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\obj\Debug\CADTools.csproj.AssemblyReference.cache
 C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\bin\Debug\CADToolsDev.dll
 C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\bin\Debug\CADToolsDev.pdb
 C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\obj\Debug\CADToolsDev.dll
 C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\obj\Debug\CADToolsDev.pdb
+C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\obj\Debug\CADTools.csproj.AssemblyReference.cache
