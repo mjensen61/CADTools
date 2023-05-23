@@ -322,7 +322,7 @@ namespace CADTools
 
         private void button7_Click(object sender, EventArgs e)
         {
-            ACADConnector.OpenPDF("Drawing Office", model.libraryfilepath +"Standards/CADToolsHelp.pdf");
+            ACADConnector.OpenPDF("Drawing Office", model.libraryfilepath +"\\Standards\\CADToolsHelp.pdf");
         }
 
         // Demand loading of templates on first use
