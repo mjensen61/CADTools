@@ -8,16 +8,23 @@ using Autodesk.AutoCAD.Runtime;
 namespace CADTools
 {
     /// <summary>
-    /// Summary description for asdkCommands.
+    /// # CADTools asdkCommands class
+    /// asdkCommands class provides the initial command and toolpallete for use by the AutoCAD command system.
     /// </summary>
+
     public class asdkCommands
     {
+        /** PaletteSet CadPaletteSet 
+        *  The main pallete set 
+        */
         static public Autodesk.AutoCAD.Windows.PaletteSet CadPaletteSet = null;
         public asdkCommands()
         {
         }
 
-        // the main block view command, brings up Model dialog with GsView control
+        ///
+        /// the main block view command, brings up Model dialog with GsView control
+        /// 
         [CommandMethod("cadbpdev")]
         static public void cadbpdev()
         {

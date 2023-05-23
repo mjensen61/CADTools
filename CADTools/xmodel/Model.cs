@@ -8,7 +8,11 @@ using System.Windows.Forms;
 
 namespace CADTools
 {
-    internal class Model
+    /// <summary>
+    /// # CADTools Model class
+    /// Model class provides the mapping of the data for the system.
+    /// </summary>
+    public class Model
     {
         public string libraryfilepath = "";
         public string localfilepath = "";

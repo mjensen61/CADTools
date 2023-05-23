@@ -1,0 +1,60 @@
+\hypertarget{class_c_a_d_tools_1_1_layers}{}\section{C\+A\+D\+Tools.\+Layers Class Reference}
+\label{class_c_a_d_tools_1_1_layers}\index{C\+A\+D\+Tools.\+Layers@{C\+A\+D\+Tools.\+Layers}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_a_d_tools_1_1_layers_a6065a5e9c560684c30b77f233dda486a}\label{class_c_a_d_tools_1_1_layers_a6065a5e9c560684c30b77f233dda486a}} 
+enum {\bfseries D\+X\+F\+Reader\+State} \{ \newline
+{\bfseries None} = 0, 
+{\bfseries L\+A\+Y\+E\+R\+S\+T\+A\+T\+E\+D\+I\+C\+T\+I\+O\+N\+A\+RY} = 1, 
+{\bfseries L\+A\+Y\+E\+R\+S\+T\+A\+TE} = 2, 
+{\bfseries L\+A\+Y\+ER} = 3, 
+\newline
+{\bfseries Error} = 4
+ \}
+\item 
+\mbox{\Hypertarget{class_c_a_d_tools_1_1_layers_ab96148157d64d927af031301e97cc767}\label{class_c_a_d_tools_1_1_layers_ab96148157d64d927af031301e97cc767}} 
+enum {\bfseries C\+A\+D\+Class\+Node\+State} \{ {\bfseries OK} = 0, 
+{\bfseries Found} = 1, 
+{\bfseries Not\+Found} = 2, 
+{\bfseries Error} = 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_a_d_tools_1_1_layers_a86f7f155470e6c0d6869a4d3c3d6c2bf}\label{class_c_a_d_tools_1_1_layers_a86f7f155470e6c0d6869a4d3c3d6c2bf}} 
+void {\bfseries Create\+Layers} ()
+\item 
+\mbox{\Hypertarget{class_c_a_d_tools_1_1_layers_ac931a400701a98f9f100fd5bd4ffa00d}\label{class_c_a_d_tools_1_1_layers_ac931a400701a98f9f100fd5bd4ffa00d}} 
+void {\bfseries Insert} (\mbox{\hyperlink{class_c_a_d_tools_1_1_layer}{Layer}} layer)
+\item 
+\mbox{\Hypertarget{class_c_a_d_tools_1_1_layers_ad5f35c5c9d51a3d5714a8eac685f3aba}\label{class_c_a_d_tools_1_1_layers_ad5f35c5c9d51a3d5714a8eac685f3aba}} 
+void {\bfseries Remove} (\mbox{\hyperlink{class_c_a_d_tools_1_1_layer}{Layer}} layer)
+\item 
+\mbox{\Hypertarget{class_c_a_d_tools_1_1_layers_a5a92932b305dcdd00c4ce3efd87accb7}\label{class_c_a_d_tools_1_1_layers_a5a92932b305dcdd00c4ce3efd87accb7}} 
+void {\bfseries Sort} ()
+\item 
+\mbox{\Hypertarget{class_c_a_d_tools_1_1_layers_a52b730caf38685432198642d18662355}\label{class_c_a_d_tools_1_1_layers_a52b730caf38685432198642d18662355}} 
+C\+A\+D\+Class\+File\+State {\bfseries Read\+File} (String filename)
+\item 
+\mbox{\Hypertarget{class_c_a_d_tools_1_1_layers_acc22010627ead6edabe19ffb1fc71109}\label{class_c_a_d_tools_1_1_layers_acc22010627ead6edabe19ffb1fc71109}} 
+C\+A\+D\+Class\+File\+State {\bfseries Write\+Xml} (String newfilename)
+\item 
+\mbox{\Hypertarget{class_c_a_d_tools_1_1_layers_ad79225a2f67b69b540cda05ace2ea474}\label{class_c_a_d_tools_1_1_layers_ad79225a2f67b69b540cda05ace2ea474}} 
+C\+A\+D\+Class\+Tree\+State {\bfseries Populate} (Tree\+View tree\+View)
+\item 
+\mbox{\Hypertarget{class_c_a_d_tools_1_1_layers_abffac6b14ebc16667c0ebb56e33eeb96}\label{class_c_a_d_tools_1_1_layers_abffac6b14ebc16667c0ebb56e33eeb96}} 
+C\+A\+D\+Class\+File\+State {\bfseries Import\+Layers} (String filename)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_a_d_tools_1_1_layers_a70d0a723ed91b9f48a0db61d271ba070}\label{class_c_a_d_tools_1_1_layers_a70d0a723ed91b9f48a0db61d271ba070}} 
+List$<$ \mbox{\hyperlink{class_c_a_d_tools_1_1_layer}{Layer}} $>$ {\bfseries \+\_\+layers} = new List$<$\mbox{\hyperlink{class_c_a_d_tools_1_1_layer}{Layer}}$>$()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+A\+D\+Tools/xmodel/Layers.\+cs\end{DoxyCompactItemize}

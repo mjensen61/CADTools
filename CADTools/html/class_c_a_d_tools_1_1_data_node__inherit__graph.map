@@ -1,0 +1,7 @@
+<map id="CADTools.DataNode" name="CADTools.DataNode">
+<area shape="rect" id="node3" href="$class_c_a_d_tools_1_1_block_node.html" title="{CADTools.BlockNode\n|+ fileInfo\l+ layer\l+ annotative\l+ nonzeroinsert\l+ modelorlayout\l+ rotation\l+ explode\l|~ BlockNode()\l}" alt="" coords="5,300,152,465"/>
+<area shape="rect" id="node4" href="$class_c_a_d_tools_1_1_directory_node.html" title="{CADTools.DirectoryNode\n|+ directoryInfo\l|+ DirectoryNode()\l}" alt="" coords="177,344,343,421"/>
+<area shape="rect" id="node5" href="$class_c_a_d_tools_1_1_file_node.html" title="{CADTools.FileNode\n|+ fileInfo\l|~ FileNode()\l}" alt="" coords="367,344,502,421"/>
+<area shape="rect" id="node6" href="$class_c_a_d_tools_1_1_layer.html" title="{CADTools.Layer\n|+ _line_type\l+ _line_file\l+ _line_weight\l+ _plot_style\l+ _colour\l+ _grouping\l+ _on_off\l+ _frozen\l+ _locked\l+ _plot_state\l|+ CreateCADLayer()\l~ Layer()\l~ Layer()\l~ WriteXML()\l}" alt="" coords="527,256,665,509"/>
+<area shape="rect" id="node7" href="$class_c_a_d_tools_1_1_link_node.html" title="{CADTools.LinkNode\n|+ fileInfo\l|~ LinkNode()\l}" alt="" coords="689,344,828,421"/>
+</map>
