@@ -98,7 +98,7 @@ namespace CADTools
                 ACADConnector.WriteCADMessage("CADBP   ***ERROR*** Unable to find Layer File Path: \"" + layfile + "\"");
             }
 
-            if (countpaths <= 6)
+            if (countpaths != 6)
             {
                 string iniFile = ACADConnector.AcadFindFile("CADTools.ini");
                 ACADConnector.WriteCADMessage("CADBP   ***ERROR*** Not all CADTOOLS library paths have been set.");
