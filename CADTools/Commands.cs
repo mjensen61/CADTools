@@ -25,8 +25,8 @@ namespace CADTools
         ///
         /// the main block view command, brings up Model dialog with GsView control
         /// 
-        [CommandMethod("cadbpdev")]
-        static public void cadbpdev()
+        [CommandMethod("cadbp")]
+        static public void cadbp()
         {
             if (CADTools.asdkCommands.CadPaletteSet == null) //Check that an instance of CadPaletteSet doesn't already exist.  Only open one at a time
             {
