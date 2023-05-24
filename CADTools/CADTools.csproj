@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CADTools</RootNamespace>
-    <AssemblyName>CADToolsDev</AssemblyName>
+    <AssemblyName>CADTools</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseWPF>true</UseWPF>
     <FileAlignment>512</FileAlignment>
