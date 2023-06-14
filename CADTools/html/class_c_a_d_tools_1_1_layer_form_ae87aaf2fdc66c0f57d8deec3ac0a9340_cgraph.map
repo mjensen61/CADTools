@@ -1,0 +1,6 @@
+<map id="CADTools.LayerForm.Form1_FormClosing" name="CADTools.LayerForm.Form1_FormClosing">
+<area shape="rect" id="node2" href="$class_c_a_d_tools_1_1_layer_form.html#afd667aba40a72d711c3b560b074fcafe" title="CADTools.LayerForm.Form1\l_ApplyItemChanges" alt="" coords="246,5,433,47"/>
+<area shape="rect" id="node3" href="$class_c_a_d_tools_1_1_layer_form.html#ad6c65a4b44b10156b3e46efdc9b0445f" title="CADTools.LayerForm.SaveFile" alt="" coords="240,71,439,98"/>
+<area shape="rect" id="node4" href="$class_c_a_d_tools_1_1model_1_1_layers.html#aaaf42979f89358cb6ed34706266ba270" title="CADTools.model.Layers.WriteXml" alt="" coords="487,71,705,98"/>
+<area shape="rect" id="node5" href="$class_c_a_d_tools_1_1model_1_1_layer_node.html#a7f4eb898cd79c5eb797df7362f5c9ce5" title="CADTools.model.LayerNode.\lWriteXML" alt="" coords="753,64,943,105"/>
+</map>

@@ -72,6 +72,11 @@
       <DependentUpon>CADToolsControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Commands.cs" />
+    <Compile Include="xmodel\BlockNode.cs" />
+    <Compile Include="xmodel\DirectoryNode.cs" />
+    <Compile Include="xmodel\FileNode.cs" />
+    <Compile Include="xmodel\Layers.cs" />
+    <Compile Include="xmodel\LinkNode.cs" />
     <Compile Include="xview\LayerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,8 +99,8 @@
     <Compile Include="xcontroller\INIConfig.cs" />
     <Compile Include="xcontroller\MathUtilities.cs" />
     <Compile Include="xcontroller\WinUtilities.cs" />
-    <Compile Include="xmodel\FileTrees.cs" />
-    <Compile Include="xmodel\Layers.cs" />
+    <Compile Include="xmodel\DataNode.cs" />
+    <Compile Include="xmodel\LayerNode.cs" />
     <Compile Include="xmodel\Model.cs" />
     <Compile Include="xview\ImageForm.cs">
       <SubType>Form</SubType>

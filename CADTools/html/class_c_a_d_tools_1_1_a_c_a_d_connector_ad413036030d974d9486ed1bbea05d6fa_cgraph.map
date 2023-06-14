@@ -1,0 +1,4 @@
+<map id="CADTools.ACADConnector.InsertBlock" name="CADTools.ACADConnector.InsertBlock">
+<area shape="rect" id="node2" href="$class_c_a_d_tools_1_1_a_c_a_d_connector.html#a8c447ee8b5a788e3768eb93a59788a3d" title="CADTools.ACADConnector.Write\lCADMessage" alt="" coords="535,5,749,47"/>
+<area shape="rect" id="node3" href="$class_c_a_d_tools_1_1_a_c_a_d_connector.html#a3435d754a21c604c888674c308925467" title="the source drawig should be drawn as number of separate entites with or without attributes. Throws NotImplementedException if invoked with .dxf file " alt="" coords="268,35,487,76"/>
+</map>

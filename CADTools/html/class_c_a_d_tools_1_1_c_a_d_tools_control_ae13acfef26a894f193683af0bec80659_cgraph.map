@@ -1,0 +1,7 @@
+<map id="CADTools.CADToolsControl.treeView2_MouseDoubleClick" name="CADTools.CADToolsControl.treeView2_MouseDoubleClick">
+<area shape="rect" id="node2" href="$class_c_a_d_tools_1_1model_1_1_data_node.html#acf7c556b062fa44f5d871ed1719b56f8" title="Returns Dataode type as string. " alt="" coords="278,5,462,47"/>
+<area shape="rect" id="node3" href="$class_c_a_d_tools_1_1_a_c_a_d_connector.html#ad413036030d974d9486ed1bbea05d6fa" title="CADTools.ACADConnector.Insert\lBlock" alt="" coords="263,71,477,112"/>
+<area shape="rect" id="node6" href="$class_c_a_d_tools_1_1_win_utilities.html#a035aeba61cb4218e911e8d9ea7649868" title="CADTools.WinUtilities.Open\lShortcut" alt="" coords="277,136,463,177"/>
+<area shape="rect" id="node4" href="$class_c_a_d_tools_1_1_a_c_a_d_connector.html#a8c447ee8b5a788e3768eb93a59788a3d" title="CADTools.ACADConnector.Write\lCADMessage" alt="" coords="792,71,1007,112"/>
+<area shape="rect" id="node5" href="$class_c_a_d_tools_1_1_a_c_a_d_connector.html#a3435d754a21c604c888674c308925467" title="the source drawig should be drawn as number of separate entites with or without attributes. Throws NotImplementedException if invoked with .dxf file " alt="" coords="525,100,744,141"/>
+</map>

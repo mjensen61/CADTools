@@ -71,6 +71,7 @@
             this.labelappname = new System.Windows.Forms.Label();
             this.header = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -103,7 +104,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(229, 334);
             this.tabControl1.TabIndex = 2;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -117,7 +117,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Templates";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             this.tabPage1.Enter += new System.EventHandler(this.tabPage1_Enter);
             // 
             // button5
@@ -348,6 +347,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button8);
             this.tabPage4.Controls.Add(this.label4);
             this.tabPage4.Controls.Add(this.treeView4);
             this.tabPage4.Location = new System.Drawing.Point(4, 4);
@@ -480,7 +480,6 @@
             this.button4.Size = new System.Drawing.Size(103, 41);
             this.button4.TabIndex = 8;
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             this.button4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button4_MouseUp);
             // 
             // imageList1
@@ -501,7 +500,6 @@
             this.textBox1.Size = new System.Drawing.Size(154, 61);
             this.textBox1.TabIndex = 13;
             this.textBox1.Text = "Author: Mike Jensen\r\nEmail: mike@mjdrafting.com.au\r\n(c) 2021 MJDrafting.com.au";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseUp);
             // 
             // labelappcopyright
@@ -563,7 +561,18 @@
             this.label11.Size = new System.Drawing.Size(42, 13);
             this.label11.TabIndex = 0;
             this.label11.Text = "Header";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // button8
+            // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.ImageIndex = 1;
+            this.button8.ImageList = this.buttonImageList;
+            this.button8.Location = new System.Drawing.Point(176, 0);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(23, 24);
+            this.button8.TabIndex = 9;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // CADToolsControl
             // 
@@ -574,7 +583,6 @@
             this.Name = "CADToolsControl";
             this.Size = new System.Drawing.Size(229, 357);
             this.SizeChanged += new System.EventHandler(this.CADToolsControl_SizeChanged);
-            this.Resize += new System.EventHandler(this.CADToolsControl_Resize);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -644,5 +652,6 @@
         private System.Windows.Forms.Label labelGuid;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }

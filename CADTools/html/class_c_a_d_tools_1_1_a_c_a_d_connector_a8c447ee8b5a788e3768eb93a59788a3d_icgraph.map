@@ -1,0 +1,12 @@
+<map id="CADTools.ACADConnector.WriteCADMessage" name="CADTools.ACADConnector.WriteCADMessage">
+<area shape="rect" id="node2" href="$class_c_a_d_tools_1_1_a_c_a_d_connector.html#a3435d754a21c604c888674c308925467" title="the source drawig should be drawn as number of separate entites with or without attributes. Throws NotImplementedException if invoked with .dxf file " alt="" coords="268,11,487,52"/>
+<area shape="rect" id="node3" href="$class_c_a_d_tools_1_1_a_c_a_d_connector.html#ad413036030d974d9486ed1bbea05d6fa" title="CADTools.ACADConnector.Insert\lBlock" alt="" coords="535,11,749,52"/>
+<area shape="rect" id="node7" href="$class_c_a_d_tools_1_1_c_a_d_tools_control.html#ac63a9d01b8d36b26ed62f9d0866198d2" title="CADTools.CADToolsControl.\lLoadLayers" alt="" coords="549,131,735,172"/>
+<area shape="rect" id="node11" href="$class_c_a_d_tools_1_1model_1_1_model.html#afd59da32f754f4a584584fbe97dc3269" title="Method to read the Library paths from the CADTools config file and set the required paths..." alt="" coords="273,179,482,220"/>
+<area shape="rect" id="node4" href="$class_c_a_d_tools_1_1_c_a_d_tools_control.html#ae13acfef26a894f193683af0bec80659" title="CADTools.CADToolsControl.tree\lView2_MouseDoubleClick" alt="" coords="808,5,1017,47"/>
+<area shape="rect" id="node5" href="$class_c_a_d_tools_1_1_c_a_d_tools_control.html#a3509846f8c3321ad8d53729add5d996b" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="1076,104,1263,145"/>
+<area shape="rect" id="node6" href="$class_c_a_d_tools_1_1_c_a_d_tools_control.html#a48a6ded0e3a679b9d83ea3f9461a00f9" title="CADTools.CADToolsControl.\lCADToolsControl" alt="" coords="1311,104,1497,145"/>
+<area shape="rect" id="node8" href="$class_c_a_d_tools_1_1_c_a_d_tools_control.html#a9ef6e0a3a7d61806965762d98cd5ed15" title="CADTools.CADToolsControl.button2\l_Click" alt="" coords="797,71,1028,112"/>
+<area shape="rect" id="node9" href="$class_c_a_d_tools_1_1_c_a_d_tools_control.html#a606a8c60673cac58efb184af0ce40fe2" title="CADTools.CADToolsControl.tab\lPage3_Enter" alt="" coords="810,136,1015,177"/>
+<area shape="rect" id="node10" href="$class_c_a_d_tools_1_1_c_a_d_tools_control.html#a68664cff274c4e441e34c162e76598c9" title="CADTools.CADToolsControl.button3\l_Click" alt="" coords="797,201,1028,243"/>
+</map>

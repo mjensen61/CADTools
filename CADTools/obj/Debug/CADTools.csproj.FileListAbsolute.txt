@@ -51,3 +51,4 @@ C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\bin\Debug\CADTools.
 C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\bin\Debug\CADTools.pdb
 C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\obj\Debug\CADTools.dll
 C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\obj\Debug\CADTools.pdb
+C:\Users\mike\Nextcloud\Development\CSharp\CADTools\CADTools\obj\Debug\CADTools.csproj.AssemblyReference.cache

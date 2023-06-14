@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_c_a_d_tools_1_1_i_n_i_config.html" title="CADTools.INIConfig" alt="" coords="5,5,140,32"/>
+<area shape="rect" id="node2" href="$class_c_a_d_tools_1_1_image_form.html" title="CADTools.ImageForm" alt="" coords="110,5,259,32"/>
+<area shape="rect" id="node3" href="$class_c_a_d_tools_1_1_layer_form.html" title="CADTools.LayerForm" alt="" coords="111,56,258,83"/>
+<area shape="rect" id="node4" href="$class_c_a_d_tools_1_1_loading_form.html" title="CADTools.LoadingForm" alt="" coords="105,107,264,133"/>
 </map>

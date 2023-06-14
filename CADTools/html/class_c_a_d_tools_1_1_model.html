@@ -66,16 +66,18 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="class_c_a_d_tools_1_1_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CADTools.Model Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><h1><a class="el" href="namespace_c_a_d_tools.html">CADTools</a> <a class="el" href="class_c_a_d_tools_1_1_model.html" title="CADTools Model classModel class provides the mapping of the data for the system. ">Model</a> class</h1>
-<a class="el" href="class_c_a_d_tools_1_1_model.html" title="CADTools Model classModel class provides the mapping of the data for the system. ">Model</a> class provides the mapping of the data for the system.  
+<p><a class="el" href="namespace_c_a_d_tools.html">CADTools</a> <a class="el" href="class_c_a_d_tools_1_1_model.html" title="CADTools Model class. ">Model</a> class.  
  <a href="class_c_a_d_tools_1_1_model.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for CADTools.Model:</div>
@@ -83,58 +85,152 @@ Collaboration diagram for CADTools.Model:</div>
 <div class="center"><img src="class_c_a_d_tools_1_1_model__coll__graph.png" border="0" usemap="#_c_a_d_tools_8_model_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a288e706efc935bef3d6c79fa26013962"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a288e706efc935bef3d6c79fa26013962">ModelType</a> { <br />
+&#160;&#160;<a class="el" href="class_c_a_d_tools_1_1_model.html#a288e706efc935bef3d6c79fa26013962a6adf97f83acf6453d4a6a4b1070f3754">ModelType.None</a> = 0, 
+<a class="el" href="class_c_a_d_tools_1_1_model.html#a288e706efc935bef3d6c79fa26013962a66f6181bcb4cff4cd38fbc804a036db6">ModelType.template</a> = 1, 
+<a class="el" href="class_c_a_d_tools_1_1_model.html#a288e706efc935bef3d6c79fa26013962a14511f2f5564650d129ca7cabc333278">ModelType.block</a> = 2, 
+<a class="el" href="class_c_a_d_tools_1_1_model.html#a288e706efc935bef3d6c79fa26013962ac00f0c4675b91fb8b918e4079a0b1bac">ModelType.standard</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="class_c_a_d_tools_1_1_model.html#a288e706efc935bef3d6c79fa26013962a2a304a1348456ccd2234cd71a81bd338">ModelType.link</a> = 4, 
+<a class="el" href="class_c_a_d_tools_1_1_model.html#a288e706efc935bef3d6c79fa26013962af56b53e412e87751f665cb9f9061e50b">ModelType.layer</a> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:a288e706efc935bef3d6c79fa26013962"><td class="mdescLeft">&#160;</td><td class="mdescRight">ModelState enumeration for various model types.  <a href="class_c_a_d_tools_1_1_model.html#a288e706efc935bef3d6c79fa26013962">More...</a><br /></td></tr>
+<tr class="separator:a288e706efc935bef3d6c79fa26013962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae58fcc06edbbae8f683cd951697cc152"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#ae58fcc06edbbae8f683cd951697cc152">InitializePaths</a> ()</td></tr>
-<tr class="separator:ae58fcc06edbbae8f683cd951697cc152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7aefe4d8bc01b9497925f39d7a92a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#aec7aefe4d8bc01b9497925f39d7a92a2">LoadModel</a> ()</td></tr>
+<tr class="memdesc:aec7aefe4d8bc01b9497925f39d7a92a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to load the model from the file system.  <a href="#aec7aefe4d8bc01b9497925f39d7a92a2">More...</a><br /></td></tr>
+<tr class="separator:aec7aefe4d8bc01b9497925f39d7a92a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ed0933a783e92bbde24d4b2e1445d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a64ed0933a783e92bbde24d4b2e1445d8">InitializeConfigPaths</a> ()</td></tr>
+<tr class="memdesc:a64ed0933a783e92bbde24d4b2e1445d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to read the Library paths from the <a class="el" href="namespace_c_a_d_tools.html">CADTools</a> config file and set the required paths.  <a href="#a64ed0933a783e92bbde24d4b2e1445d8">More...</a><br /></td></tr>
+<tr class="separator:a64ed0933a783e92bbde24d4b2e1445d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa101c901cd893e55225adf447856671c"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#aa101c901cd893e55225adf447856671c">GetExtension</a> (<a class="el" href="class_c_a_d_tools_1_1_model.html#a288e706efc935bef3d6c79fa26013962">ModelType</a> mdtype)</td></tr>
+<tr class="separator:aa101c901cd893e55225adf447856671c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8a2691d6b014579eb06a5630fe740e6d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a8a2691d6b014579eb06a5630fe740e6d">libraryfilepath</a> = &quot;&quot;</td></tr>
-<tr class="separator:a8a2691d6b014579eb06a5630fe740e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a194292753cb03032a93b5c2042e221b1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a194292753cb03032a93b5c2042e221b1">localfilepath</a> = &quot;&quot;</td></tr>
-<tr class="separator:a194292753cb03032a93b5c2042e221b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a338f197d68789511c9d06c833dcf7c9e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a338f197d68789511c9d06c833dcf7c9e">tplpath</a> = &quot;&quot;</td></tr>
-<tr class="separator:a338f197d68789511c9d06c833dcf7c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13369da3bb0d629022d2ae17eb95f8c3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a13369da3bb0d629022d2ae17eb95f8c3">blkpath</a> = &quot;&quot;</td></tr>
-<tr class="separator:a13369da3bb0d629022d2ae17eb95f8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a723e78c7427fbe0ee8e31071ca1db966"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a723e78c7427fbe0ee8e31071ca1db966">pdfpath</a> = &quot;&quot;</td></tr>
-<tr class="separator:a723e78c7427fbe0ee8e31071ca1db966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d386f06e225a5adab59c9fe20c79e29"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a7d386f06e225a5adab59c9fe20c79e29">dwgpath</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a7d386f06e225a5adab59c9fe20c79e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to root.  <a href="#a7d386f06e225a5adab59c9fe20c79e29">More...</a><br /></td></tr>
 <tr class="separator:a7d386f06e225a5adab59c9fe20c79e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dc013d28192c87830bc12555552b6ab"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a8dc013d28192c87830bc12555552b6ab">layfile</a> = &quot;&quot;</td></tr>
-<tr class="separator:a8dc013d28192c87830bc12555552b6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f1b3b09a61fd97fb709efa06546fe6b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a2f1b3b09a61fd97fb709efa06546fe6b">blkextension</a> = &quot;.dwg&quot;</td></tr>
-<tr class="separator:a2f1b3b09a61fd97fb709efa06546fe6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abef921dbc553b80b35ef33192cb36b79"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#abef921dbc553b80b35ef33192cb36b79">tplextension</a> = &quot;.dwt&quot;</td></tr>
-<tr class="separator:abef921dbc553b80b35ef33192cb36b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adba9fc828ae85d986829c05f82cc5fd2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#adba9fc828ae85d986829c05f82cc5fd2">pdfextension</a> = &quot;.pdf&quot;</td></tr>
-<tr class="separator:adba9fc828ae85d986829c05f82cc5fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04cf0105126dd32fc5a34dc9116b1fb8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a04cf0105126dd32fc5a34dc9116b1fb8">lnkextension</a> = &quot;.lnk&quot;</td></tr>
-<tr class="separator:a04cf0105126dd32fc5a34dc9116b1fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46222409c023407b71eaf9c7257f11c1"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a46222409c023407b71eaf9c7257f11c1">templatesLoaded</a> = false</td></tr>
-<tr class="separator:a46222409c023407b71eaf9c7257f11c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07b5a677c6c8df3d9df632beb17ed203"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a07b5a677c6c8df3d9df632beb17ed203">blocksLoaded</a> = false</td></tr>
-<tr class="separator:a07b5a677c6c8df3d9df632beb17ed203"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71bf8cd959847f50c698222783a19e5b"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a71bf8cd959847f50c698222783a19e5b">layersLoaded</a> = false</td></tr>
-<tr class="separator:a71bf8cd959847f50c698222783a19e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af70ff8a84dab816135531acb7b9bc353"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#af70ff8a84dab816135531acb7b9bc353">standardsloaded</a> = false</td></tr>
-<tr class="separator:af70ff8a84dab816135531acb7b9bc353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:af96776e3c0c452e5d145c480723e6862"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#af96776e3c0c452e5d145c480723e6862">LibraryFilePath</a><code> [get]</code></td></tr>
+<tr class="memdesc:af96776e3c0c452e5d145c480723e6862"><td class="mdescLeft">&#160;</td><td class="mdescRight">LibraryFilePath property.  <a href="#af96776e3c0c452e5d145c480723e6862">More...</a><br /></td></tr>
+<tr class="separator:af96776e3c0c452e5d145c480723e6862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef1fb81155bb2a544da4b3fcb058599"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#aaef1fb81155bb2a544da4b3fcb058599">LocalFilepath</a><code> [get]</code></td></tr>
+<tr class="memdesc:aaef1fb81155bb2a544da4b3fcb058599"><td class="mdescLeft">&#160;</td><td class="mdescRight">LocalFilepath property [get].  <a href="#aaef1fb81155bb2a544da4b3fcb058599">More...</a><br /></td></tr>
+<tr class="separator:aaef1fb81155bb2a544da4b3fcb058599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce74f43b30b0de92521df05e8b19117"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#afce74f43b30b0de92521df05e8b19117">TplPath</a><code> [get]</code></td></tr>
+<tr class="memdesc:afce74f43b30b0de92521df05e8b19117"><td class="mdescLeft">&#160;</td><td class="mdescRight">TplPath property [get].  <a href="#afce74f43b30b0de92521df05e8b19117">More...</a><br /></td></tr>
+<tr class="separator:afce74f43b30b0de92521df05e8b19117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d12ce17c5a3196034e380ced68f80b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a67d12ce17c5a3196034e380ced68f80b">BlkPath</a><code> [get]</code></td></tr>
+<tr class="memdesc:a67d12ce17c5a3196034e380ced68f80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlkPath property [get].  <a href="#a67d12ce17c5a3196034e380ced68f80b">More...</a><br /></td></tr>
+<tr class="separator:a67d12ce17c5a3196034e380ced68f80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f4bb63b41635736bce02275536c41d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a12f4bb63b41635736bce02275536c41d">PdfPath</a><code> [get]</code></td></tr>
+<tr class="memdesc:a12f4bb63b41635736bce02275536c41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">PdfPath property [get].  <a href="#a12f4bb63b41635736bce02275536c41d">More...</a><br /></td></tr>
+<tr class="separator:a12f4bb63b41635736bce02275536c41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ea9769fd657bb80b39a992f84cf10f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a72ea9769fd657bb80b39a992f84cf10f">LayFile</a><code> [get]</code></td></tr>
+<tr class="memdesc:a72ea9769fd657bb80b39a992f84cf10f"><td class="mdescLeft">&#160;</td><td class="mdescRight">LayFile property [get].  <a href="#a72ea9769fd657bb80b39a992f84cf10f">More...</a><br /></td></tr>
+<tr class="separator:a72ea9769fd657bb80b39a992f84cf10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545b8f63b1857bc5ebcf665927918d62"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a545b8f63b1857bc5ebcf665927918d62">TemplatesLoaded</a><code> [get]</code></td></tr>
+<tr class="memdesc:a545b8f63b1857bc5ebcf665927918d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to enumerate model load state.  <a href="#a545b8f63b1857bc5ebcf665927918d62">More...</a><br /></td></tr>
+<tr class="separator:a545b8f63b1857bc5ebcf665927918d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e3fc77f5091dd3963c956b34c39ae7"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#af0e3fc77f5091dd3963c956b34c39ae7">BlocksLoaded</a><code> [get]</code></td></tr>
+<tr class="memdesc:af0e3fc77f5091dd3963c956b34c39ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlocksLoaded property defines that the Blocks folders have been loaded.  <a href="#af0e3fc77f5091dd3963c956b34c39ae7">More...</a><br /></td></tr>
+<tr class="separator:af0e3fc77f5091dd3963c956b34c39ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681164a6c53f8a37bc7d444b1bdf77e5"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a681164a6c53f8a37bc7d444b1bdf77e5">LayersLoaded</a><code> [get]</code></td></tr>
+<tr class="memdesc:a681164a6c53f8a37bc7d444b1bdf77e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">LayersLoaded property defines that the Layers folders have been loaded.  <a href="#a681164a6c53f8a37bc7d444b1bdf77e5">More...</a><br /></td></tr>
+<tr class="separator:a681164a6c53f8a37bc7d444b1bdf77e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67616aefb5e1b3c19a4dd2c12b215053"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_model.html#a67616aefb5e1b3c19a4dd2c12b215053">StandardsLoaded</a><code> [get]</code></td></tr>
+<tr class="memdesc:a67616aefb5e1b3c19a4dd2c12b215053"><td class="mdescLeft">&#160;</td><td class="mdescRight">StandardsLoaded property defines that the Standards folders have been loaded.  <a href="#a67616aefb5e1b3c19a4dd2c12b215053">More...</a><br /></td></tr>
+<tr class="separator:a67616aefb5e1b3c19a4dd2c12b215053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h1><a class="el" href="namespace_c_a_d_tools.html">CADTools</a> <a class="el" href="class_c_a_d_tools_1_1_model.html" title="CADTools Model classModel class provides the mapping of the data for the system. ">Model</a> class</h1>
-<p><a class="el" href="class_c_a_d_tools_1_1_model.html" title="CADTools Model classModel class provides the mapping of the data for the system. ">Model</a> class provides the mapping of the data for the system. </p>
+<div class="textblock"><p><a class="el" href="namespace_c_a_d_tools.html">CADTools</a> <a class="el" href="class_c_a_d_tools_1_1_model.html" title="CADTools Model class. ">Model</a> class. </p>
+<p><a class="el" href="class_c_a_d_tools_1_1_model.html" title="CADTools Model class. ">Model</a> class provides the mapping of the data to the file system. </p>
 
 <p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00015">15</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae58fcc06edbbae8f683cd951697cc152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae58fcc06edbbae8f683cd951697cc152">&#9670;&nbsp;</a></span>InitializePaths()</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a288e706efc935bef3d6c79fa26013962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288e706efc935bef3d6c79fa26013962">&#9670;&nbsp;</a></span>ModelType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_a_d_tools_1_1_model.html#a288e706efc935bef3d6c79fa26013962">CADTools.Model.ModelType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ModelState enumeration for various model types. </p>
+<p><a class="el" href="class_c_a_d_tools_1_1_model.html" title="CADTools Model class. ">Model</a> types provides the mapping of the data to the file types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a288e706efc935bef3d6c79fa26013962a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a288e706efc935bef3d6c79fa26013962a66f6181bcb4cff4cd38fbc804a036db6"></a>template&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a288e706efc935bef3d6c79fa26013962a14511f2f5564650d129ca7cabc333278"></a>block&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a288e706efc935bef3d6c79fa26013962ac00f0c4675b91fb8b918e4079a0b1bac"></a>standard&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a288e706efc935bef3d6c79fa26013962a2a304a1348456ccd2234cd71a81bd338"></a>link&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a288e706efc935bef3d6c79fa26013962af56b53e412e87751f665cb9f9061e50b"></a>layer&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00092">92</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa101c901cd893e55225adf447856671c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa101c901cd893e55225adf447856671c">&#9670;&nbsp;</a></span>GetExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string CADTools.Model.GetExtension </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_a_d_tools_1_1_model.html#a288e706efc935bef3d6c79fa26013962">ModelType</a>&#160;</td>
+          <td class="paramname"><em>mdtype</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00102">102</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+
+</div>
+</div>
+<a id="a64ed0933a783e92bbde24d4b2e1445d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ed0933a783e92bbde24d4b2e1445d8">&#9670;&nbsp;</a></span>InitializeConfigPaths()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int CADTools.Model.InitializePaths </td>
+          <td class="memname">int CADTools.Model.InitializeConfigPaths </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -142,78 +238,67 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00034">34</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+<p>Method to read the Library paths from the <a class="el" href="namespace_c_a_d_tools.html">CADTools</a> config file and set the required paths. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">No</td><td>paramaters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 = sucess, -1 = failure. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00153">153</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_c_a_d_tools_1_1_model_ae58fcc06edbbae8f683cd951697cc152_cgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_model_ae58fcc06edbbae8f683cd951697cc152_cgraph" alt=""/></div>
-<map name="class_c_a_d_tools_1_1_model_ae58fcc06edbbae8f683cd951697cc152_cgraph" id="class_c_a_d_tools_1_1_model_ae58fcc06edbbae8f683cd951697cc152_cgraph">
+<div class="center"><img src="class_c_a_d_tools_1_1_model_a64ed0933a783e92bbde24d4b2e1445d8_cgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_model_a64ed0933a783e92bbde24d4b2e1445d8_cgraph" alt=""/></div>
+<map name="class_c_a_d_tools_1_1_model_a64ed0933a783e92bbde24d4b2e1445d8_cgraph" id="class_c_a_d_tools_1_1_model_a64ed0933a783e92bbde24d4b2e1445d8_cgraph">
 <area shape="rect" id="node2" href="class_c_a_d_tools_1_1_i_n_i_config.html#a507a084753dcffe7a0f06cf330ae0ac0" title="CADTools.INIConfig.ReadConfig" alt="" coords="224,64,429,91"/>
 <area shape="rect" id="node3" href="class_c_a_d_tools_1_1_i_n_i_config.html#ac507fbf34761f4a1d13f1d5c05709583" title="CADTools.INIConfig.INIConfig" alt="" coords="477,5,668,32"/>
 <area shape="rect" id="node4" href="class_c_a_d_tools_1_1_i_n_i_config.html#a60b530497f4cd26d5e752e641c6d1a32" title="CADTools.INIConfig.IniRead\lValue" alt="" coords="481,57,664,98"/>
 <area shape="rect" id="node5" href="class_c_a_d_tools_1_1_i_n_i_config.html#a95a910d6bf2d054a9c01fb3138b36c59" title="CADTools.INIConfig.IniWrite\lValue" alt="" coords="481,122,664,163"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="aec7aefe4d8bc01b9497925f39d7a92a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec7aefe4d8bc01b9497925f39d7a92a2">&#9670;&nbsp;</a></span>LoadModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CADTools.Model.LoadModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to load the model from the file system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">No</td><td>paramaters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 = sucess, -1 = failure. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00144">144</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_c_a_d_tools_1_1_model_ae58fcc06edbbae8f683cd951697cc152_icgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_model_ae58fcc06edbbae8f683cd951697cc152_icgraph" alt=""/></div>
-<map name="class_c_a_d_tools_1_1_model_ae58fcc06edbbae8f683cd951697cc152_icgraph" id="class_c_a_d_tools_1_1_model_ae58fcc06edbbae8f683cd951697cc152_icgraph">
-<area shape="rect" id="node2" href="class_c_a_d_tools_1_1_c_a_d_tools_control.html#a48a6ded0e3a679b9d83ea3f9461a00f9" title="CADTools.CADToolsControl.\lCADToolsControl" alt="" coords="224,5,411,47"/>
+<div class="center"><img src="class_c_a_d_tools_1_1_model_aec7aefe4d8bc01b9497925f39d7a92a2_icgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_model_aec7aefe4d8bc01b9497925f39d7a92a2_icgraph" alt=""/></div>
+<map name="class_c_a_d_tools_1_1_model_aec7aefe4d8bc01b9497925f39d7a92a2_icgraph" id="class_c_a_d_tools_1_1_model_aec7aefe4d8bc01b9497925f39d7a92a2_icgraph">
+<area shape="rect" id="node2" href="class_c_a_d_tools_1_1_c_a_d_tools_control.html#a48a6ded0e3a679b9d83ea3f9461a00f9" title="CADTools.CADToolsControl.\lCADToolsControl" alt="" coords="240,5,427,47"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2f1b3b09a61fd97fb709efa06546fe6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f1b3b09a61fd97fb709efa06546fe6b">&#9670;&nbsp;</a></span>blkextension</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string CADTools.Model.blkextension = &quot;.dwg&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00024">24</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
-
-</div>
-</div>
-<a id="a13369da3bb0d629022d2ae17eb95f8c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13369da3bb0d629022d2ae17eb95f8c3">&#9670;&nbsp;</a></span>blkpath</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string CADTools.Model.blkpath = &quot;&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00020">20</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
-
-</div>
-</div>
-<a id="a07b5a677c6c8df3d9df632beb17ed203"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07b5a677c6c8df3d9df632beb17ed203">&#9670;&nbsp;</a></span>blocksLoaded</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Boolean CADTools.Model.blocksLoaded = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00030">30</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
-
-</div>
-</div>
 <a id="a7d386f06e225a5adab59c9fe20c79e29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d386f06e225a5adab59c9fe20c79e29">&#9670;&nbsp;</a></span>dwgpath</h2>
 
@@ -226,183 +311,271 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Path to root. </p>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00058">58</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a67d12ce17c5a3196034e380ced68f80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d12ce17c5a3196034e380ced68f80b">&#9670;&nbsp;</a></span>BlkPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CADTools.Model.BlkPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>BlkPath property [get]. </p>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00047">47</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+
+</div>
+</div>
+<a id="af0e3fc77f5091dd3963c956b34c39ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0e3fc77f5091dd3963c956b34c39ae7">&#9670;&nbsp;</a></span>BlocksLoaded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Boolean CADTools.Model.BlocksLoaded</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>BlocksLoaded property defines that the Blocks folders have been loaded. </p>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00125">125</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+
+</div>
+</div>
+<a id="a681164a6c53f8a37bc7d444b1bdf77e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a681164a6c53f8a37bc7d444b1bdf77e5">&#9670;&nbsp;</a></span>LayersLoaded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Boolean CADTools.Model.LayersLoaded</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>LayersLoaded property defines that the Layers folders have been loaded. </p>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00129">129</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+
+</div>
+</div>
+<a id="a72ea9769fd657bb80b39a992f84cf10f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ea9769fd657bb80b39a992f84cf10f">&#9670;&nbsp;</a></span>LayFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CADTools.Model.LayFile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>LayFile property [get]. </p>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00069">69</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+
+</div>
+</div>
+<a id="af96776e3c0c452e5d145c480723e6862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af96776e3c0c452e5d145c480723e6862">&#9670;&nbsp;</a></span>LibraryFilePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CADTools.Model.LibraryFilePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>LibraryFilePath property. </p>
+
 <p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00022">22</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
 
 </div>
 </div>
-<a id="a71bf8cd959847f50c698222783a19e5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71bf8cd959847f50c698222783a19e5b">&#9670;&nbsp;</a></span>layersLoaded</h2>
+<a id="aaef1fb81155bb2a544da4b3fcb058599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef1fb81155bb2a544da4b3fcb058599">&#9670;&nbsp;</a></span>LocalFilepath</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Boolean CADTools.Model.layersLoaded = false</td>
+          <td class="memname">string CADTools.Model.LocalFilepath</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00031">31</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+<p>LocalFilepath property [get]. </p>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00033">33</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
 
 </div>
 </div>
-<a id="a8dc013d28192c87830bc12555552b6ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dc013d28192c87830bc12555552b6ab">&#9670;&nbsp;</a></span>layfile</h2>
+<a id="a12f4bb63b41635736bce02275536c41d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f4bb63b41635736bce02275536c41d">&#9670;&nbsp;</a></span>PdfPath</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string CADTools.Model.layfile = &quot;&quot;</td>
+          <td class="memname">string CADTools.Model.PdfPath</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00023">23</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+<p>PdfPath property [get]. </p>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00054">54</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
 
 </div>
 </div>
-<a id="a8a2691d6b014579eb06a5630fe740e6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a2691d6b014579eb06a5630fe740e6d">&#9670;&nbsp;</a></span>libraryfilepath</h2>
+<a id="a67616aefb5e1b3c19a4dd2c12b215053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67616aefb5e1b3c19a4dd2c12b215053">&#9670;&nbsp;</a></span>StandardsLoaded</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string CADTools.Model.libraryfilepath = &quot;&quot;</td>
+          <td class="memname">Boolean CADTools.Model.StandardsLoaded</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00017">17</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+<p>StandardsLoaded property defines that the Standards folders have been loaded. </p>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00133">133</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
 
 </div>
 </div>
-<a id="a04cf0105126dd32fc5a34dc9116b1fb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04cf0105126dd32fc5a34dc9116b1fb8">&#9670;&nbsp;</a></span>lnkextension</h2>
+<a id="a545b8f63b1857bc5ebcf665927918d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a545b8f63b1857bc5ebcf665927918d62">&#9670;&nbsp;</a></span>TemplatesLoaded</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string CADTools.Model.lnkextension = &quot;.lnk&quot;</td>
+          <td class="memname">Boolean CADTools.Model.TemplatesLoaded</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00027">27</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+<p>Flag to enumerate model load state. </p>
+<p>TemplatesLoaded property defines that the Templates folders have been loaded. </p>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00121">121</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
 
 </div>
 </div>
-<a id="a194292753cb03032a93b5c2042e221b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a194292753cb03032a93b5c2042e221b1">&#9670;&nbsp;</a></span>localfilepath</h2>
+<a id="afce74f43b30b0de92521df05e8b19117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce74f43b30b0de92521df05e8b19117">&#9670;&nbsp;</a></span>TplPath</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string CADTools.Model.localfilepath = &quot;&quot;</td>
+          <td class="memname">string CADTools.Model.TplPath</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00018">18</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+<p>TplPath property [get]. </p>
 
-</div>
-</div>
-<a id="adba9fc828ae85d986829c05f82cc5fd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adba9fc828ae85d986829c05f82cc5fd2">&#9670;&nbsp;</a></span>pdfextension</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string CADTools.Model.pdfextension = &quot;.pdf&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00026">26</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
-
-</div>
-</div>
-<a id="a723e78c7427fbe0ee8e31071ca1db966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a723e78c7427fbe0ee8e31071ca1db966">&#9670;&nbsp;</a></span>pdfpath</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string CADTools.Model.pdfpath = &quot;&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00021">21</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
-
-</div>
-</div>
-<a id="af70ff8a84dab816135531acb7b9bc353"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af70ff8a84dab816135531acb7b9bc353">&#9670;&nbsp;</a></span>standardsloaded</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Boolean CADTools.Model.standardsloaded = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00032">32</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
-
-</div>
-</div>
-<a id="a46222409c023407b71eaf9c7257f11c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46222409c023407b71eaf9c7257f11c1">&#9670;&nbsp;</a></span>templatesLoaded</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Boolean CADTools.Model.templatesLoaded = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00029">29</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
-
-</div>
-</div>
-<a id="abef921dbc553b80b35ef33192cb36b79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abef921dbc553b80b35ef33192cb36b79">&#9670;&nbsp;</a></span>tplextension</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string CADTools.Model.tplextension = &quot;.dwt&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00025">25</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
-
-</div>
-</div>
-<a id="a338f197d68789511c9d06c833dcf7c9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a338f197d68789511c9d06c833dcf7c9e">&#9670;&nbsp;</a></span>tplpath</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string CADTools.Model.tplpath = &quot;&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00019">19</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8cs_source.html#l00040">40</a> of file <a class="el" href="_model_8cs_source.html">Model.cs</a>.</p>
 
 </div>
 </div>

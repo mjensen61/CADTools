@@ -1,0 +1,28 @@
+<map id="CADTools.LayerForm.InitializeComponent" name="CADTools.LayerForm.InitializeComponent">
+<area shape="rect" id="node2" href="$class_c_a_d_tools_1_1_layer_form.html#ac9e0c38e5580016d645288dcd522b506" title="CADTools.LayerForm.openTool\lStripMenuItem_Click" alt="" coords="263,11,465,53"/>
+<area shape="rect" id="node6" href="$class_c_a_d_tools_1_1_layer_form.html#a76627c507acf14dae93db9ef39609b27" title="CADTools.LayerForm.import\lToolStripMenuItem_Click" alt="" coords="271,78,457,119"/>
+<area shape="rect" id="node9" href="$class_c_a_d_tools_1_1_layer_form.html#a89d71fc21c001cfe134823570ffbdb70" title="CADTools.LayerForm.saveTool\lStripMenuItem_Click" alt="" coords="264,342,464,383"/>
+<area shape="rect" id="node13" href="$class_c_a_d_tools_1_1_layer_form.html#a5ef078f4b11938ef5054cd84d2bd6ac7" title="CADTools.LayerForm.exitTool\lStripMenuItem_Click" alt="" coords="267,603,461,645"/>
+<area shape="rect" id="node14" href="$class_c_a_d_tools_1_1_layer_form.html#a5234ff4c21ae1102cc39f3cd43cbc538" title="CADTools.LayerForm.treeView1\l_AfterSelect" alt="" coords="261,538,467,579"/>
+<area shape="rect" id="node17" href="$class_c_a_d_tools_1_1_layer_form.html#a46dfc6d3030b48f4f4ffa0f56242db9f" title="CADTools.LayerForm.dataChanged" alt="" coords="251,669,477,696"/>
+<area shape="rect" id="node18" href="$class_c_a_d_tools_1_1_layer_form.html#ae61606b1a7ce484356fa3926ac57506d" title="CADTools.LayerForm.button1\l_Click" alt="" coords="267,473,461,514"/>
+<area shape="rect" id="node19" href="$class_c_a_d_tools_1_1_layer_form.html#aed1e204f43954a627c4ff1826a111a24" title="CADTools.LayerForm.button2\l_Click" alt="" coords="267,277,461,318"/>
+<area shape="rect" id="node20" href="$class_c_a_d_tools_1_1_layer_form.html#ac4aacaec0347ab1b2bc004db8c318ddb" title="CADTools.LayerForm.insert\lToolStripMenuItem_Click" alt="" coords="273,721,455,762"/>
+<area shape="rect" id="node22" href="$class_c_a_d_tools_1_1_layer_form.html#af8123eb54b67f73dbfc32cc68f857c91" title="CADTools.LayerForm.delete\lToolStripMenuItem_Click" alt="" coords="271,146,457,187"/>
+<area shape="rect" id="node24" href="$class_c_a_d_tools_1_1_layer_form.html#abfff267a0fb61709ed6d7298f4ae120f" title="CADTools.LayerForm.toolStrip\lMenuItem1_Click" alt="" coords="265,211,463,253"/>
+<area shape="rect" id="node26" href="$class_c_a_d_tools_1_1_layer_form.html#ae87aaf2fdc66c0f57d8deec3ac0a9340" title="CADTools.LayerForm.Form1\l_FormClosing" alt="" coords="271,407,457,449"/>
+<area shape="rect" id="node27" href="$class_c_a_d_tools_1_1_layer_form.html#a1e1651e0b2a6196bf33aff3b1385f87c" title="CADTools.LayerForm.Layer\lForm_Load" alt="" coords="273,786,455,827"/>
+<area shape="rect" id="node3" href="$class_c_a_d_tools_1_1_layer_form.html#a3df2c32c6ba24eac5a59f6c4bd63af32" title="CADTools.LayerForm.LoadFile" alt="" coords="532,17,731,44"/>
+<area shape="rect" id="node4" href="$class_c_a_d_tools_1_1model_1_1_layers.html#a0281bab7185289faa7e3ed7d89b4595e" title="CADTools.model.Layers.ReadFile" alt="" coords="786,5,1003,32"/>
+<area shape="rect" id="node5" href="$class_c_a_d_tools_1_1model_1_1_layers.html#a6342310dac1c90ffd3e805cfc7d66571" title="CADTools.model.Layers.Populate" alt="" coords="786,123,1003,149"/>
+<area shape="rect" id="node7" href="$class_c_a_d_tools_1_1_layer_form.html#aeab8de23a5a218d00c6c4dc6074963e8" title="CADTools.LayerForm.ImportFile" alt="" coords="528,68,735,95"/>
+<area shape="rect" id="node8" href="$class_c_a_d_tools_1_1model_1_1_layers.html#a464c726da6c6653eaa2e0582b94cc880" title="CADTools.model.Layers.Import\lLayers" alt="" coords="793,57,996,98"/>
+<area shape="rect" id="node10" href="$class_c_a_d_tools_1_1_layer_form.html#ad6c65a4b44b10156b3e46efdc9b0445f" title="CADTools.LayerForm.SaveFile" alt="" coords="532,349,731,376"/>
+<area shape="rect" id="node11" href="$class_c_a_d_tools_1_1model_1_1_layers.html#aaaf42979f89358cb6ed34706266ba270" title="CADTools.model.Layers.WriteXml" alt="" coords="785,349,1004,376"/>
+<area shape="rect" id="node12" href="$class_c_a_d_tools_1_1model_1_1_layer_node.html#a7f4eb898cd79c5eb797df7362f5c9ce5" title="CADTools.model.LayerNode.\lWriteXML" alt="" coords="1052,342,1241,383"/>
+<area shape="rect" id="node15" href="$class_c_a_d_tools_1_1_layer_form.html#afd667aba40a72d711c3b560b074fcafe" title="CADTools.LayerForm.Form1\l_ApplyItemChanges" alt="" coords="538,473,725,514"/>
+<area shape="rect" id="node16" href="$class_c_a_d_tools_1_1_layer_form.html#ac42ff907f4a80abfbdde5e3fe65bbb7c" title="CADTools.LayerForm.Form1\l_LoadItem" alt="" coords="538,538,725,579"/>
+<area shape="rect" id="node21" href="$class_c_a_d_tools_1_1model_1_1_layers.html#a0e1f8316a85ecf0b0d2ff2f612bed4a5" title="CADTools.model.Layers.Insert" alt="" coords="532,728,731,755"/>
+<area shape="rect" id="node23" href="$class_c_a_d_tools_1_1model_1_1_layers.html#aa4bd4065a55d0e91ad82c27f0500ca2d" title="CADTools.model.Layers.Remove" alt="" coords="525,169,737,196"/>
+<area shape="rect" id="node25" href="$class_c_a_d_tools_1_1model_1_1_layers.html#ab789b1bdbb9bab5a162746506676ef9e" title="CADTools.model.Layers.Sort" alt="" coords="536,271,727,297"/>
+</map>

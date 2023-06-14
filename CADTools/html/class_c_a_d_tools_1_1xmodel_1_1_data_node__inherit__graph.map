@@ -1,0 +1,7 @@
+<map id="CADTools.xmodel.DataNode" name="CADTools.xmodel.DataNode">
+<area shape="rect" id="node3" title="BlockNode class. " alt="" coords="5,329,199,495"/>
+<area shape="rect" id="node4" title="DirectoryNode class. " alt="" coords="223,373,435,451"/>
+<area shape="rect" id="node5" title="FileNode class. " alt="" coords="459,373,641,451"/>
+<area shape="rect" id="node6" title="LayerNode class. " alt="" coords="665,285,857,539"/>
+<area shape="rect" id="node7" title="LinkNode class. " alt="" coords="881,373,1065,451"/>
+</map>

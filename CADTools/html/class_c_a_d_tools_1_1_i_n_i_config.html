@@ -69,6 +69,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_c_a_d_tools_1_1_i_n_i_config-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CADTools.INIConfig Class Reference</div>  </div>
@@ -100,6 +101,13 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a4956f766ebe1714fac8a18081f524324"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_i_n_i_config.html#a4956f766ebe1714fac8a18081f524324">path</a></td></tr>
 <tr class="separator:a4956f766ebe1714fac8a18081f524324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a40daf878df5006b6705be53e59ee3139"><td class="memItemLeft" align="right" valign="top">static long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_i_n_i_config.html#a40daf878df5006b6705be53e59ee3139">WritePrivateProfileString</a> (string section, string key, string val, string filePath)</td></tr>
+<tr class="separator:a40daf878df5006b6705be53e59ee3139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb49b00e98aa5d9d8eddf1a419953ce"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_a_d_tools_1_1_i_n_i_config.html#aecb49b00e98aa5d9d8eddf1a419953ce">GetPrivateProfileString</a> (string section, string key, string def, StringBuilder retVal, int size, string filePath)</td></tr>
+<tr class="separator:aecb49b00e98aa5d9d8eddf1a419953ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -128,15 +136,84 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_c_a_d_tools_1_1_i_n_i_config_ac507fbf34761f4a1d13f1d5c05709583_icgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_i_n_i_config_ac507fbf34761f4a1d13f1d5c05709583_icgraph" alt=""/></div>
 <map name="class_c_a_d_tools_1_1_i_n_i_config_ac507fbf34761f4a1d13f1d5c05709583_icgraph" id="class_c_a_d_tools_1_1_i_n_i_config_ac507fbf34761f4a1d13f1d5c05709583_icgraph">
 <area shape="rect" id="node2" href="class_c_a_d_tools_1_1_i_n_i_config.html#a507a084753dcffe7a0f06cf330ae0ac0" title="CADTools.INIConfig.ReadConfig" alt="" coords="244,13,449,39"/>
-<area shape="rect" id="node5" href="class_c_a_d_tools_1_1_i_n_i_config.html#a474cb359ae0806a3ff7916849d003ee0" title="CADTools.INIConfig.Write\lConfig" alt="" coords="261,64,432,105"/>
-<area shape="rect" id="node3" href="class_c_a_d_tools_1_1_model.html#ae58fcc06edbbae8f683cd951697cc152" title="CADTools.Model.Initialize\lPaths" alt="" coords="497,5,668,47"/>
-<area shape="rect" id="node4" href="class_c_a_d_tools_1_1_c_a_d_tools_control.html#a48a6ded0e3a679b9d83ea3f9461a00f9" title="CADTools.CADToolsControl.\lCADToolsControl" alt="" coords="716,5,903,47"/>
+<area shape="rect" id="node4" href="class_c_a_d_tools_1_1_i_n_i_config.html#a474cb359ae0806a3ff7916849d003ee0" title="CADTools.INIConfig.Write\lConfig" alt="" coords="261,64,432,105"/>
+<area shape="rect" id="node3" href="class_c_a_d_tools_1_1model_1_1_model.html#afd59da32f754f4a584584fbe97dc3269" title="Method to read the Library paths from the CADTools config file and set the required paths..." alt="" coords="497,5,707,47"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aecb49b00e98aa5d9d8eddf1a419953ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecb49b00e98aa5d9d8eddf1a419953ce">&#9670;&nbsp;</a></span>GetPrivateProfileString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CADTools.INIConfig.GetPrivateProfileString </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>def</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">StringBuilder&#160;</td>
+          <td class="paramname"><em>retVal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_a_d_tools_1_1_i_n_i_config_aecb49b00e98aa5d9d8eddf1a419953ce_icgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_i_n_i_config_aecb49b00e98aa5d9d8eddf1a419953ce_icgraph" alt=""/></div>
+<map name="class_c_a_d_tools_1_1_i_n_i_config_aecb49b00e98aa5d9d8eddf1a419953ce_icgraph" id="class_c_a_d_tools_1_1_i_n_i_config_aecb49b00e98aa5d9d8eddf1a419953ce_icgraph">
+<area shape="rect" id="node2" href="class_c_a_d_tools_1_1_i_n_i_config.html#a60b530497f4cd26d5e752e641c6d1a32" title="CADTools.INIConfig.IniRead\lValue" alt="" coords="252,5,435,47"/>
+<area shape="rect" id="node3" href="class_c_a_d_tools_1_1_i_n_i_config.html#a507a084753dcffe7a0f06cf330ae0ac0" title="CADTools.INIConfig.ReadConfig" alt="" coords="483,13,688,39"/>
+<area shape="rect" id="node4" href="class_c_a_d_tools_1_1model_1_1_model.html#afd59da32f754f4a584584fbe97dc3269" title="Method to read the Library paths from the CADTools config file and set the required paths..." alt="" coords="736,5,945,47"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a60b530497f4cd26d5e752e641c6d1a32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60b530497f4cd26d5e752e641c6d1a32">&#9670;&nbsp;</a></span>IniReadValue()</h2>
 
@@ -171,13 +248,20 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_i_n_i_config_8cs_source.html#l00041">41</a> of file <a class="el" href="_i_n_i_config_8cs_source.html">INIConfig.cs</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_a_d_tools_1_1_i_n_i_config_a60b530497f4cd26d5e752e641c6d1a32_cgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_i_n_i_config_a60b530497f4cd26d5e752e641c6d1a32_cgraph" alt=""/></div>
+<map name="class_c_a_d_tools_1_1_i_n_i_config_a60b530497f4cd26d5e752e641c6d1a32_cgraph" id="class_c_a_d_tools_1_1_i_n_i_config_a60b530497f4cd26d5e752e641c6d1a32_cgraph">
+<area shape="rect" id="node2" href="class_c_a_d_tools_1_1_i_n_i_config.html#aecb49b00e98aa5d9d8eddf1a419953ce" title="CADTools.INIConfig.GetPrivate\lProfileString" alt="" coords="236,5,435,47"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_a_d_tools_1_1_i_n_i_config_a60b530497f4cd26d5e752e641c6d1a32_icgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_i_n_i_config_a60b530497f4cd26d5e752e641c6d1a32_icgraph" alt=""/></div>
 <map name="class_c_a_d_tools_1_1_i_n_i_config_a60b530497f4cd26d5e752e641c6d1a32_icgraph" id="class_c_a_d_tools_1_1_i_n_i_config_a60b530497f4cd26d5e752e641c6d1a32_icgraph">
 <area shape="rect" id="node2" href="class_c_a_d_tools_1_1_i_n_i_config.html#a507a084753dcffe7a0f06cf330ae0ac0" title="CADTools.INIConfig.ReadConfig" alt="" coords="236,13,441,39"/>
-<area shape="rect" id="node3" href="class_c_a_d_tools_1_1_model.html#ae58fcc06edbbae8f683cd951697cc152" title="CADTools.Model.Initialize\lPaths" alt="" coords="489,5,660,47"/>
-<area shape="rect" id="node4" href="class_c_a_d_tools_1_1_c_a_d_tools_control.html#a48a6ded0e3a679b9d83ea3f9461a00f9" title="CADTools.CADToolsControl.\lCADToolsControl" alt="" coords="708,5,895,47"/>
+<area shape="rect" id="node3" href="class_c_a_d_tools_1_1model_1_1_model.html#afd59da32f754f4a584584fbe97dc3269" title="Method to read the Library paths from the CADTools config file and set the required paths..." alt="" coords="489,5,699,47"/>
 </map>
 </div>
 
@@ -217,14 +301,21 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_i_n_i_config_8cs_source.html#l00032">32</a> of file <a class="el" href="_i_n_i_config_8cs_source.html">INIConfig.cs</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_a_d_tools_1_1_i_n_i_config_a95a910d6bf2d054a9c01fb3138b36c59_cgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_i_n_i_config_a95a910d6bf2d054a9c01fb3138b36c59_cgraph" alt=""/></div>
+<map name="class_c_a_d_tools_1_1_i_n_i_config_a95a910d6bf2d054a9c01fb3138b36c59_cgraph" id="class_c_a_d_tools_1_1_i_n_i_config_a95a910d6bf2d054a9c01fb3138b36c59_cgraph">
+<area shape="rect" id="node2" href="class_c_a_d_tools_1_1_i_n_i_config.html#a40daf878df5006b6705be53e59ee3139" title="CADTools.INIConfig.Write\lPrivateProfileString" alt="" coords="236,5,407,47"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_a_d_tools_1_1_i_n_i_config_a95a910d6bf2d054a9c01fb3138b36c59_icgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_i_n_i_config_a95a910d6bf2d054a9c01fb3138b36c59_icgraph" alt=""/></div>
 <map name="class_c_a_d_tools_1_1_i_n_i_config_a95a910d6bf2d054a9c01fb3138b36c59_icgraph" id="class_c_a_d_tools_1_1_i_n_i_config_a95a910d6bf2d054a9c01fb3138b36c59_icgraph">
 <area shape="rect" id="node2" href="class_c_a_d_tools_1_1_i_n_i_config.html#a507a084753dcffe7a0f06cf330ae0ac0" title="CADTools.INIConfig.ReadConfig" alt="" coords="236,13,441,39"/>
-<area shape="rect" id="node5" href="class_c_a_d_tools_1_1_i_n_i_config.html#a474cb359ae0806a3ff7916849d003ee0" title="CADTools.INIConfig.Write\lConfig" alt="" coords="253,64,424,105"/>
-<area shape="rect" id="node3" href="class_c_a_d_tools_1_1_model.html#ae58fcc06edbbae8f683cd951697cc152" title="CADTools.Model.Initialize\lPaths" alt="" coords="489,5,660,47"/>
-<area shape="rect" id="node4" href="class_c_a_d_tools_1_1_c_a_d_tools_control.html#a48a6ded0e3a679b9d83ea3f9461a00f9" title="CADTools.CADToolsControl.\lCADToolsControl" alt="" coords="708,5,895,47"/>
+<area shape="rect" id="node4" href="class_c_a_d_tools_1_1_i_n_i_config.html#a474cb359ae0806a3ff7916849d003ee0" title="CADTools.INIConfig.Write\lConfig" alt="" coords="253,64,424,105"/>
+<area shape="rect" id="node3" href="class_c_a_d_tools_1_1model_1_1_model.html#afd59da32f754f4a584584fbe97dc3269" title="Method to read the Library paths from the CADTools config file and set the required paths..." alt="" coords="489,5,699,47"/>
 </map>
 </div>
 
@@ -268,9 +359,12 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_a_d_tools_1_1_i_n_i_config_a507a084753dcffe7a0f06cf330ae0ac0_cgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_i_n_i_config_a507a084753dcffe7a0f06cf330ae0ac0_cgraph" alt=""/></div>
 <map name="class_c_a_d_tools_1_1_i_n_i_config_a507a084753dcffe7a0f06cf330ae0ac0_cgraph" id="class_c_a_d_tools_1_1_i_n_i_config_a507a084753dcffe7a0f06cf330ae0ac0_cgraph">
-<area shape="rect" id="node2" href="class_c_a_d_tools_1_1_i_n_i_config.html#ac507fbf34761f4a1d13f1d5c05709583" title="CADTools.INIConfig.INIConfig" alt="" coords="259,5,449,32"/>
-<area shape="rect" id="node3" href="class_c_a_d_tools_1_1_i_n_i_config.html#a60b530497f4cd26d5e752e641c6d1a32" title="CADTools.INIConfig.IniRead\lValue" alt="" coords="263,57,445,98"/>
-<area shape="rect" id="node4" href="class_c_a_d_tools_1_1_i_n_i_config.html#a95a910d6bf2d054a9c01fb3138b36c59" title="CADTools.INIConfig.IniWrite\lValue" alt="" coords="263,122,445,163"/>
+<area shape="rect" id="node2" href="class_c_a_d_tools_1_1_a_c_a_d_connector.html#add6abc7ec4885ec698672c2e99993222" title="CADTools.ACADConnector.Acad\lFindFile" alt="" coords="259,5,472,47"/>
+<area shape="rect" id="node3" href="class_c_a_d_tools_1_1_i_n_i_config.html#ac507fbf34761f4a1d13f1d5c05709583" title="CADTools.INIConfig.INIConfig" alt="" coords="270,71,461,98"/>
+<area shape="rect" id="node4" href="class_c_a_d_tools_1_1_i_n_i_config.html#a60b530497f4cd26d5e752e641c6d1a32" title="CADTools.INIConfig.IniRead\lValue" alt="" coords="274,123,457,164"/>
+<area shape="rect" id="node6" href="class_c_a_d_tools_1_1_i_n_i_config.html#a95a910d6bf2d054a9c01fb3138b36c59" title="CADTools.INIConfig.IniWrite\lValue" alt="" coords="274,188,457,229"/>
+<area shape="rect" id="node5" href="class_c_a_d_tools_1_1_i_n_i_config.html#aecb49b00e98aa5d9d8eddf1a419953ce" title="CADTools.INIConfig.GetPrivate\lProfileString" alt="" coords="520,123,719,164"/>
+<area shape="rect" id="node7" href="class_c_a_d_tools_1_1_i_n_i_config.html#a40daf878df5006b6705be53e59ee3139" title="CADTools.INIConfig.Write\lPrivateProfileString" alt="" coords="534,188,705,229"/>
 </map>
 </div>
 <div class="dynheader">
@@ -278,8 +372,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_a_d_tools_1_1_i_n_i_config_a507a084753dcffe7a0f06cf330ae0ac0_icgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_i_n_i_config_a507a084753dcffe7a0f06cf330ae0ac0_icgraph" alt=""/></div>
 <map name="class_c_a_d_tools_1_1_i_n_i_config_a507a084753dcffe7a0f06cf330ae0ac0_icgraph" id="class_c_a_d_tools_1_1_i_n_i_config_a507a084753dcffe7a0f06cf330ae0ac0_icgraph">
-<area shape="rect" id="node2" href="class_c_a_d_tools_1_1_model.html#ae58fcc06edbbae8f683cd951697cc152" title="CADTools.Model.Initialize\lPaths" alt="" coords="259,5,429,47"/>
-<area shape="rect" id="node3" href="class_c_a_d_tools_1_1_c_a_d_tools_control.html#a48a6ded0e3a679b9d83ea3f9461a00f9" title="CADTools.CADToolsControl.\lCADToolsControl" alt="" coords="477,5,664,47"/>
+<area shape="rect" id="node2" href="class_c_a_d_tools_1_1model_1_1_model.html#afd59da32f754f4a584584fbe97dc3269" title="Method to read the Library paths from the CADTools config file and set the required paths..." alt="" coords="259,5,468,47"/>
 </map>
 </div>
 
@@ -333,6 +426,66 @@ Here is the call graph for this function:</div>
 <map name="class_c_a_d_tools_1_1_i_n_i_config_a474cb359ae0806a3ff7916849d003ee0_cgraph" id="class_c_a_d_tools_1_1_i_n_i_config_a474cb359ae0806a3ff7916849d003ee0_cgraph">
 <area shape="rect" id="node2" href="class_c_a_d_tools_1_1_i_n_i_config.html#ac507fbf34761f4a1d13f1d5c05709583" title="CADTools.INIConfig.INIConfig" alt="" coords="224,5,415,32"/>
 <area shape="rect" id="node3" href="class_c_a_d_tools_1_1_i_n_i_config.html#a95a910d6bf2d054a9c01fb3138b36c59" title="CADTools.INIConfig.IniWrite\lValue" alt="" coords="228,57,411,98"/>
+<area shape="rect" id="node4" href="class_c_a_d_tools_1_1_i_n_i_config.html#a40daf878df5006b6705be53e59ee3139" title="CADTools.INIConfig.Write\lPrivateProfileString" alt="" coords="463,57,633,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a40daf878df5006b6705be53e59ee3139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40daf878df5006b6705be53e59ee3139">&#9670;&nbsp;</a></span>WritePrivateProfileString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long CADTools.INIConfig.WritePrivateProfileString </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_a_d_tools_1_1_i_n_i_config_a40daf878df5006b6705be53e59ee3139_icgraph.png" border="0" usemap="#class_c_a_d_tools_1_1_i_n_i_config_a40daf878df5006b6705be53e59ee3139_icgraph" alt=""/></div>
+<map name="class_c_a_d_tools_1_1_i_n_i_config_a40daf878df5006b6705be53e59ee3139_icgraph" id="class_c_a_d_tools_1_1_i_n_i_config_a40daf878df5006b6705be53e59ee3139_icgraph">
+<area shape="rect" id="node2" href="class_c_a_d_tools_1_1_i_n_i_config.html#a95a910d6bf2d054a9c01fb3138b36c59" title="CADTools.INIConfig.IniWrite\lValue" alt="" coords="224,35,407,76"/>
+<area shape="rect" id="node3" href="class_c_a_d_tools_1_1_i_n_i_config.html#a507a084753dcffe7a0f06cf330ae0ac0" title="CADTools.INIConfig.ReadConfig" alt="" coords="455,13,660,39"/>
+<area shape="rect" id="node5" href="class_c_a_d_tools_1_1_i_n_i_config.html#a474cb359ae0806a3ff7916849d003ee0" title="CADTools.INIConfig.Write\lConfig" alt="" coords="472,64,643,105"/>
+<area shape="rect" id="node4" href="class_c_a_d_tools_1_1model_1_1_model.html#afd59da32f754f4a584584fbe97dc3269" title="Method to read the Library paths from the CADTools config file and set the required paths..." alt="" coords="708,5,917,47"/>
 </map>
 </div>
 

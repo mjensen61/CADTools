@@ -2,14 +2,23 @@ var searchData=
 [
   ['imageform',['ImageForm',['../class_c_a_d_tools_1_1_image_form.html',1,'CADTools.ImageForm'],['../class_c_a_d_tools_1_1_image_form.html#ad143315c224e17b243f431c2696fc9c1',1,'CADTools.ImageForm.ImageForm()']]],
   ['imageform_2ecs',['ImageForm.cs',['../_image_form_8cs.html',1,'']]],
+  ['imagelist1',['imageList1',['../class_c_a_d_tools_1_1_c_a_d_tools_control.html#a2a0335bf39488381e80c28d4ccf9a28d',1,'CADTools.CADToolsControl.imageList1()'],['../class_c_a_d_tools_1_1_layer_form.html#a1b52db41641bd03cfa68d83c0c6a9e6d',1,'CADTools.LayerForm.imageList1()']]],
   ['imagesourcetogdi',['ImageSourceToGDI',['../class_c_a_d_tools_1_1_win_utilities.html#a11e38744132fafc5df6e46d5bcb2d6f9',1,'CADTools::WinUtilities']]],
-  ['importlayers',['ImportLayers',['../class_c_a_d_tools_1_1_layers.html#abffac6b14ebc16667c0ebb56e33eeb96',1,'CADTools::Layers']]],
+  ['importdwgasblock',['ImportDwgAsBlock',['../class_c_a_d_tools_1_1_a_c_a_d_connector.html#a3435d754a21c604c888674c308925467',1,'CADTools::ACADConnector']]],
+  ['importfile',['ImportFile',['../class_c_a_d_tools_1_1_layer_form.html#aeab8de23a5a218d00c6c4dc6074963e8',1,'CADTools::LayerForm']]],
+  ['importlayers',['ImportLayers',['../class_c_a_d_tools_1_1model_1_1_layers.html#a464c726da6c6653eaa2e0582b94cc880',1,'CADTools::model::Layers']]],
+  ['importtoolstripmenuitem_5fclick',['importToolStripMenuItem_Click',['../class_c_a_d_tools_1_1_layer_form.html#a76627c507acf14dae93db9ef39609b27',1,'CADTools::LayerForm']]],
   ['iniconfig',['INIConfig',['../class_c_a_d_tools_1_1_i_n_i_config.html',1,'CADTools.INIConfig'],['../class_c_a_d_tools_1_1_i_n_i_config.html#ac507fbf34761f4a1d13f1d5c05709583',1,'CADTools.INIConfig.INIConfig()']]],
   ['iniconfig_2ecs',['INIConfig.cs',['../_i_n_i_config_8cs.html',1,'']]],
   ['inireadvalue',['IniReadValue',['../class_c_a_d_tools_1_1_i_n_i_config.html#a60b530497f4cd26d5e752e641c6d1a32',1,'CADTools::INIConfig']]],
   ['inistate',['IniState',['../namespace_c_a_d_tools.html#a5747a1217bb8213efc192ebff6b0088f',1,'CADTools']]],
-  ['initializepaths',['InitializePaths',['../class_c_a_d_tools_1_1_model.html#ae58fcc06edbbae8f683cd951697cc152',1,'CADTools::Model']]],
+  ['initializecomponent',['InitializeComponent',['../class_c_a_d_tools_1_1_c_a_d_tools_control.html#a3509846f8c3321ad8d53729add5d996b',1,'CADTools.CADToolsControl.InitializeComponent()'],['../class_c_a_d_tools_1_1_layer_form.html#a011a0728578725e62f6ae2ea6672033c',1,'CADTools.LayerForm.InitializeComponent()'],['../class_c_a_d_tools_1_1_loading_form.html#ac451a150151239e23b053bf6b1ddeee3',1,'CADTools.LoadingForm.InitializeComponent()']]],
+  ['initializepaths',['InitializePaths',['../class_c_a_d_tools_1_1model_1_1_model.html#afd59da32f754f4a584584fbe97dc3269',1,'CADTools::model::Model']]],
   ['iniwritevalue',['IniWriteValue',['../class_c_a_d_tools_1_1_i_n_i_config.html#a95a910d6bf2d054a9c01fb3138b36c59',1,'CADTools::INIConfig']]],
-  ['insert',['Insert',['../class_c_a_d_tools_1_1_layers.html#ac931a400701a98f9f100fd5bd4ffa00d',1,'CADTools::Layers']]],
-  ['invalid',['Invalid',['../class_c_a_d_tools_1_1_layer_form.html#a95e4bb0465993fb98c5ba4c374c96d53a4bbb8f967da6d1a610596d7257179c2b',1,'CADTools.LayerForm.Invalid()'],['../namespace_c_a_d_tools.html#a1ac9d4e2ef37bbe8447566161d313dafa4bbb8f967da6d1a610596d7257179c2b',1,'CADTools.Invalid()']]]
+  ['insert',['Insert',['../class_c_a_d_tools_1_1model_1_1_layers.html#a0e1f8316a85ecf0b0d2ff2f612bed4a5',1,'CADTools::model::Layers']]],
+  ['insertblock',['InsertBlock',['../class_c_a_d_tools_1_1_a_c_a_d_connector.html#ad413036030d974d9486ed1bbea05d6fa',1,'CADTools::ACADConnector']]],
+  ['inserttoolstripmenuitem',['insertToolStripMenuItem',['../class_c_a_d_tools_1_1_layer_form.html#ab3c6e9993d0261ece9b5174edaa89b88',1,'CADTools::LayerForm']]],
+  ['inserttoolstripmenuitem_5fclick',['insertToolStripMenuItem_Click',['../class_c_a_d_tools_1_1_layer_form.html#ac4aacaec0347ab1b2bc004db8c318ddb',1,'CADTools::LayerForm']]],
+  ['invalid',['Invalid',['../class_c_a_d_tools_1_1_layer_form.html#a95e4bb0465993fb98c5ba4c374c96d53a4bbb8f967da6d1a610596d7257179c2b',1,'CADTools.LayerForm.Invalid()'],['../namespace_c_a_d_tools.html#a1ac9d4e2ef37bbe8447566161d313dafa4bbb8f967da6d1a610596d7257179c2b',1,'CADTools.Invalid()']]],
+  ['isloaded',['IsLoaded',['../class_c_a_d_tools_1_1model_1_1_model.html#a2c3d5e865f0d92acfb35ddd57b96a766',1,'CADTools::model::Model']]]
 ];

@@ -8,7 +8,7 @@ using Autodesk.AutoCAD.Runtime;
 namespace CADTools
 {
     /// <summary>
-    /// # CADTools asdkCommands class
+    /// # AutoCAD CommandClass class
     /// asdkCommands class provides the initial command and toolpallete for use by the AutoCAD command system.
     /// </summary>
 

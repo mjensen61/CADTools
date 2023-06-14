@@ -1,0 +1,9 @@
+<map id="CADTools.CADToolsControl.treeView2_AfterSelect" name="CADTools.CADToolsControl.treeView2_AfterSelect">
+<area shape="rect" id="node2" href="$class_c_a_d_tools_1_1model_1_1_data_node.html#acf7c556b062fa44f5d871ed1719b56f8" title="Returns Dataode type as string. " alt="" coords="273,5,457,47"/>
+<area shape="rect" id="node3" href="$class_c_a_d_tools_1_1_a_c_a_d_connector.html#afe844faee7ebb65f3cdb7a3de8b7e810" title="CADTools.ACADConnector.Get\lOuterDWGModelBitmap" alt="" coords="263,71,467,112"/>
+<area shape="rect" id="node4" href="$class_c_a_d_tools_1_1_a_c_a_d_connector.html#a466a24ee8d98ecb5aed258b0c6f08c14" title="CADTools.ACADConnector.Get\lBlockImage" alt="" coords="515,5,719,47"/>
+<area shape="rect" id="node7" href="$class_c_a_d_tools_1_1_win_utilities.html#a11e38744132fafc5df6e46d5bcb2d6f9" title="CADTools.WinUtilities.Image\lSourceToGDI" alt="" coords="522,71,711,112"/>
+<area shape="rect" id="node8" href="$class_c_a_d_tools_1_1_win_utilities.html#abcfefc99a601e3c6694c79f0bb0a9191" title="CADTools.WinUtilities.Convert" alt="" coords="518,137,715,163"/>
+<area shape="rect" id="node5" href="$class_c_a_d_tools_1_1_a_c_a_d_connector.html#a5972b36cc47d9c96143a476ef82449bd" title="CADTools.ACADConnector.Get\lBlockImagePointer" alt="" coords="767,5,971,47"/>
+<area shape="rect" id="node6" href="$class_c_a_d_tools_1_1_a_c_a_d_connector.html#a57ac13461a7f78354275634721e6db92" title="CADTools.ACADConnector.Get\lBlockTableRecordId" alt="" coords="1019,5,1223,47"/>
+</map>

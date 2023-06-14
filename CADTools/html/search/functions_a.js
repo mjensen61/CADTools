@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['readconfig',['ReadConfig',['../class_c_a_d_tools_1_1_i_n_i_config.html#a507a084753dcffe7a0f06cf330ae0ac0',1,'CADTools::INIConfig']]],
-  ['readfile',['ReadFile',['../class_c_a_d_tools_1_1_layers.html#a52b730caf38685432198642d18662355',1,'CADTools::Layers']]],
-  ['remove',['Remove',['../class_c_a_d_tools_1_1_layers.html#ad5f35c5c9d51a3d5714a8eac685f3aba',1,'CADTools::Layers']]]
+  ['measurementunitsconverter',['MeasurementUnitsConverter',['../class_c_a_d_tools_1_1_a_c_a_d_connector_1_1_measurement_units_converter.html#add404e0cb876a80f28612d739d889d16',1,'CADTools::ACADConnector::MeasurementUnitsConverter']]],
+  ['model',['Model',['../class_c_a_d_tools_1_1model_1_1_model.html#afb50d205f5c377bc8e7511bfb4ddc1ef',1,'CADTools::model::Model']]]
 ];

@@ -13,6 +13,7 @@ using System.Diagnostics;
 
 using AcadApp = Autodesk.AutoCAD.ApplicationServices.Application;
 
+using CADTools.model;
 
 namespace CADTools
 {
@@ -26,13 +27,9 @@ namespace CADTools
         {
             InitializeComponent(); // Windows generated code
 
-            model.InitializePaths();
-
-            label1.Text = model.tplpath;
-            label2.Text = model.blkpath;
-            label3.Text = model.layfile;
-            label3.Text = model.pdfpath;
-
+            //--------------------------------------------------------------
+            // Label assembly version, author and copyright on form.
+            //--------------------------------------------------------------
             Assembly asm = Assembly.GetExecutingAssembly();
             object[] obj = asm.GetCustomAttributes(false);
             var appName = asm.GetName().Name;
@@ -42,10 +39,8 @@ namespace CADTools
             this.label11.Text = String.Format("{0}", appVersion);
             var attribute = (GuidAttribute)asm.GetCustomAttributes(typeof(GuidAttribute), true)[0];
             this.labelGuid.Text = attribute.Value;
-
             textBox1.Text = string.Format("{0}.{1}.{2} Rev {3} " + textBox1.Text,
                 appVersion.Major, appVersion.Minor, appVersion.Build, appVersion.Revision);
-
             foreach (object o in obj)
             {
                 if (o.GetType() == typeof(System.Reflection.AssemblyCompanyAttribute))
@@ -59,26 +54,34 @@ namespace CADTools
                     this.labelappcopyright.Text = String.Format("{0}", aca.Copyright);
                 }
             }
+            //--------------------------------------------------------------
 
-            ListDirectory(treeView1, model.tplpath, model.tplextension);
-            model.templatesLoaded = true;
+            //--------------------------------------------------------------
+            // Initialise configuration paths and load model.
+            //--------------------------------------------------------------
+            CADTools.model.Model model = new CADTools.model.Model();
+
+            label1.Text = model.TplPath;
+            label2.Text = model.BlkPath;
+            label3.Text = model.LayFile;
+            label3.Text = model.StandardsPath;
+
+            ListDirectory(treeView1, Model.ModelType.template);
         }
 
-        public bool ListDirectory(TreeView treeView, string path, string extension)
+        public bool ListDirectory(TreeView treeView, Model.ModelType modeltype)
         {
             treeView.Nodes.Clear();
-            if (Directory.Exists(path))
+            if (model.IsLoaded(modeltype))
             {
                 Form alertform = new LoadingForm();
                 alertform.Show();
                 alertform.Refresh();
 
-                var rootDirectoryInfo = new DirectoryInfo(path);
-                TreeNode aRootNode = CreateDirectoryTree(rootDirectoryInfo, extension);
+                TreeNode aRootNode = model.GetNode(modeltype);
 
                 treeView.Nodes.Add(aRootNode);
                 aRootNode.Expand();
-                aRootNode.ToolTipText = path;
                 alertform.Hide();
                 alertform.Close();
 
@@ -86,7 +89,6 @@ namespace CADTools
             }
             else
             {
-                ACADConnector.WriteCADMessage("Unable to locate layer path: \"" + path + "\"");
                 return false;
             }
         }
@@ -119,9 +121,9 @@ namespace CADTools
             TreeNode treeNode = treeView1.SelectedNode;
             DataNode dataNode = (DataNode)treeNode;
 
-            string datatype = dataNode.datatype;
+            string nodetype = dataNode.GetNodeType(); ;
 
-            if (datatype == "FileNode")
+            if (nodetype == "FileNode")
             {
                 FileNode fileNode = (FileNode)treeNode;
                 string fileName = fileNode.fileInfo.FullName;
@@ -136,7 +138,7 @@ namespace CADTools
                     MessageBox.Show("Unable to locate " + fileName);
                 }
             }
-            if (datatype == "LinkNode")
+            if (nodetype == "LinkNode")
             {
                 LinkNode linkNode = (LinkNode)treeNode;
                 string linkName = linkNode.fileInfo.FullName;
@@ -156,9 +158,9 @@ namespace CADTools
             TreeNode treeNode = treeView2.SelectedNode;
             DataNode dataNode = (DataNode)treeNode;
 
-            string datatype = dataNode.datatype;
+            string nodetype = dataNode.GetNodeType();
 
-            if (datatype == "BlockNode")
+            if (nodetype == "BlockNode")
             {
                 BlockNode fileNode = (BlockNode)treeNode;
                 string fileName = fileNode.fileInfo.FullName;
@@ -185,9 +187,9 @@ namespace CADTools
             TreeNode treeNode = treeView2.SelectedNode;
             DataNode dataNode = (DataNode)treeNode;
 
-            string datatype = dataNode.datatype;
+            string nodetype = dataNode.GetNodeType();
 
-            if (datatype == "BlockNode")
+            if (nodetype == "BlockNode")
             {
                 BlockNode fileNode = (BlockNode)treeNode;
                 string fileName = fileNode.fileInfo.FullName;
@@ -200,7 +202,7 @@ namespace CADTools
                     MessageBox.Show("Unable to locate " + fileName);
                 }
             }
-            if (datatype == "LinkNode")
+            if (nodetype == "LinkNode")
             {
                 LinkNode linkNode = (LinkNode)treeNode;
                 string linkName = linkNode.fileInfo.FullName;
@@ -244,7 +246,7 @@ namespace CADTools
             TreeNode treeNode = treeView4.SelectedNode;
             DataNode dataNode = (DataNode)treeNode;
 
-            string datatype = dataNode.datatype;
+            string datatype = dataNode.GetNodeType();
 
             if (datatype == "FileNode")
             {
@@ -274,43 +276,7 @@ namespace CADTools
             }
 
         }
-        public TreeNode CreateDirectoryTree(DirectoryInfo directoryInfo, string extension)
-        {
-            var directoryNode = new DirectoryNode(directoryInfo);
-            directoryNode.ImageIndex = 0;
-            directoryNode.BackColor = Color.White;
-            directoryNode.directoryInfo = directoryInfo;
-
-            foreach (var directory in directoryInfo.GetDirectories())
-            {
-                directoryNode.Nodes.Add(CreateDirectoryTree(directory, extension));
-            }
-            foreach (var file in directoryInfo.GetFiles())
-            {
-                if (file.Extension == extension)
-                {
-                    if (file.Extension == model.blkextension) // Item is a dwg file
-                    {
-                        var filenode = new BlockNode(file);
-                        directoryNode.Nodes.Add(filenode);
-                        filenode.ImageIndex = 1;
-                    }
-                    else
-                    {
-                        var filenode = new FileNode(file);
-                        directoryNode.Nodes.Add(filenode);
-                        filenode.ImageIndex = 1;
-                    }
-                }
-                else if (file.Extension == model.lnkextension)
-                {
-                    var filenode = new LinkNode(file);
-                    directoryNode.Nodes.Add(filenode);
-                    filenode.ImageIndex = 1;
-                }
-            }
-            return directoryNode;
-        }
+        
         private void button1_Click_1(object sender, EventArgs e)
         {
             layers.CreateLayers();
@@ -320,7 +286,7 @@ namespace CADTools
             CADTools.LayerForm layerform = new LayerForm();
             layerform.ShowDialog();
             layerform.Dispose();
-            this.LoadLayers(treeView3, model.layfile);
+            this.LoadLayers(treeView3, model.LayFile);
         }
 
         private void textBox1_MouseUp(object sender, MouseEventArgs e)
@@ -335,101 +301,74 @@ namespace CADTools
 
         private void button7_Click(object sender, EventArgs e)
         {
-            ACADConnector.OpenPDF("Drawing Office", model.libraryfilepath +"\\Standards\\CADToolsHelp.pdf");
+            ACADConnector.OpenPDF("Drawing Office", model.LibraryFilePath +"\\Standards\\CADToolsHelp.pdf");
         }
 
         // Demand loading of templates on first use
         private void tabPage1_Enter(object sender, EventArgs e)
         {
-            if (model.templatesLoaded == false)
+            if (model.TemplatesLoaded == false)
             {
-                model.templatesLoaded = ListDirectory(treeView1, model.tplpath, model.tplextension);
+                ListDirectory(treeView1, Model.ModelType.template);
             }
         }
 
         // Demand loading of blocks on first use
         private void tabPage2_Enter(object sender, EventArgs e)
         {
-            if (model.blocksLoaded == false)
+            if (model.BlocksLoaded == false)
             {
-                model.blocksLoaded = ListDirectory(treeView2, model.blkpath, model.blkextension);
+                ListDirectory(treeView2, Model.ModelType.block);
             }
         }
 
         // Demand loading of layers on first use
         private void tabPage3_Enter(object sender, EventArgs e)
         {
-            if (model.layersLoaded == false)
+            if (model.LayersLoaded == false)
             {
-                model.layersLoaded =  LoadLayers(treeView3, model.layfile);
+                LoadLayers(treeView3, model.LayFile);
             }
         }
 
         // Demand loading of standards on first use
         private void tabPage4_Enter(object sender, EventArgs e)
         {
-            if (model.standardsloaded == false)
+            if (model.StandardsLoaded == false)
             {
-                model.standardsloaded = ListDirectory(treeView4, model.pdfpath, model.pdfextension);
+                ListDirectory(treeView4, Model.ModelType.standard);
             }
         }
 
         // Reload templates
         private void button5_Click(object sender, EventArgs e)
         {
-            ListDirectory(treeView1, model.tplpath, model.tplextension);
-            model.templatesLoaded = true;
+            ListDirectory(treeView1, Model.ModelType.template);
         }
 
         // Reload blocks
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-            ListDirectory(treeView2, model.blkpath, model.blkextension);
-            model.blocksLoaded = true;
-        }
 
         // Reload layers
         private void button3_Click(object sender, EventArgs e)
         {
-            this.LoadLayers(treeView3, model.layfile);
+            LoadLayers(treeView3, model.LayFile);
         }
 
         // Reload standards
         private void button6_Click(object sender, EventArgs e)
         {
-            ListDirectory(treeView4, model.pdfpath, model.pdfextension);
-            model.standardsloaded = true;
+            ListDirectory(treeView2, Model.ModelType.block);
         }
 
-        private void CADToolsControl_Resize(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)
         {
-
+            ListDirectory(treeView4, Model.ModelType.standard);
         }
 
         private void CADToolsControl_SizeChanged(object sender, EventArgs e)
         {
             if (this.Width < 200) this.Width = 200;
             if (this.Height < 300) this.Height = 300;
-        }
-
-        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -11,7 +11,7 @@ namespace CADTools
     public enum IniState
     {
         OK = 0,
-        Error = 2
+        Error = 1
     }
     public class INIConfig
     {

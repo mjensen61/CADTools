@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using CADTools.model;
+
 namespace CADTools
 {
     public enum DataValidateCond
@@ -20,7 +22,7 @@ namespace CADTools
     {
         private String currfilename = "";
         private Layers layers = new Layers();
-        Layer currlayer = null;
+        LayerNode currlayer = null;
         private Boolean _table_edited = false;
         private Boolean _item_edited = false;
         private DataValidateCond _datavalidated = DataValidateCond.Invalid;
@@ -31,7 +33,7 @@ namespace CADTools
         public LayerForm()
         {
             InitializeComponent();
-            currlayer = new Layer();
+            currlayer = new LayerNode();
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -86,7 +88,7 @@ namespace CADTools
             // Transfer new selected entry from table to edit form if data is validated.
             if ((e.Node.Nodes.Count == 0) && (_datavalidated == DataValidateCond.Valid))
             {
-                currlayer = (Layer)e.Node;
+                currlayer = (LayerNode)e.Node;
                 Form1_LoadItem();
                 this._datavalidated = DataValidateCond.Valid;
             }
