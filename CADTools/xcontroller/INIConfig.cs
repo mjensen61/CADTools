@@ -78,14 +78,14 @@ namespace CADTools
 
                     MessageBox.Show(basefolder);
 
-                    iniFile = "C:\\ProgramData\\Autodesk\\ApplicationPlugins\\zzCADCust.bundle\\CADTools.ini";
+                    iniFile = "C:\\Uses\\mjensen3\\OneDrive-GHD\\GHD\\Autodesk\\ACAD User\\MAJCAD\\CADTools.ini";
                     INIConfig ini = new INIConfig(iniFile);
 
                     ini.IniWriteValue("CADTools", "Version", "1.00.00");
                     ini.IniWriteValue("Directories", "LibraryPath", basefolder);
-                    ini.IniWriteValue("Directories", "LocalPath", "C:\\ProgramData\\Autodesk\\ApplicationPlugins\\zzCADCust.bundle");
+                    ini.IniWriteValue("Directories", "LocalPath", "C:\\Uses\\mjensen3\\OneDrive-GHD\\GHD\\Autodesk\\ACAD User\\MAJCAD");
                     ini.IniWriteValue("Files", "layfile",
-                        "C:\\ProgramData\\Autodesk\\ApplicationPlugins\\zzCalibreCADCust.bundle\\Contents\\LayerStates\\Standard Layer Definitions.xml");
+                        "C:\\Uses\\mjensen3\\OneDrive-GHD\\GHD\\Autodesk\\ACAD User\\MAJCAD\\LayerStates\\Standard Layer Definitions.xml");
                     //ini.IniWriteValue("Extentions", "TemplateExtention", ".dwt");
                     //ini.IniWriteValue("Extentions", "BlockExtention", ".dwg");
                     ini.IniWriteValue("SUPPORT PATHS", "PrinterStyleSheetPath", "PlotStyles");
